@@ -41,6 +41,8 @@ figure, header, nav, section, article, aside, footer, figcaption {
   outline: 0;
 }
 
+
+
 .clearfix:after {
   content: ".";
   display: block;
@@ -312,6 +314,26 @@ Header Style
   transition: all .5s ease 0s;
 }
 
+/* Ajuste del tamaño de la fuente en pantallas pequeñas (móviles) */
+@media (max-width: 992px) {
+  .header-area .main-nav .logo {
+    display: flex; /* Asegura que los elementos dentro del logo se distribuyan bien */
+    flex-wrap: wrap; /* Permite que el texto se ajuste a dos líneas si es necesario */
+    justify-content: flex-start; /* Alinea el contenido a la izquierda */
+    margin-right: 20px; /* Aumentar margen derecho del contenedor para mayor espacio */
+  }
+
+  .header-area .main-nav .logo h1 {
+    font-size: 16px !important; /* Ajustar un tamaño más adecuado */
+    line-height: 1.2; /* Controlar la altura de la línea */
+    word-wrap: break-word; /* Fuerza que el texto se ajuste a un nuevo renglón */
+    white-space: normal; /* Permite que el texto se divida en varias líneas */
+    text-align: left; /* Alineación a la izquierda */
+    margin-right: 30px; /* Aumentar margen derecho para evitar la superposición */
+    padding-right: 10px; /* Reducir relleno si es necesario */
+  }
+}
+
 .header-area .main-nav {
   background: transparent;
   display: flex
@@ -328,11 +350,11 @@ Header Style
 .header-area .main-nav .logo h1 {
   font-size: 20px;
   text-transform: uppercase;
-  color: #fff;
+  color: #ffffff;
   font-weight: 600;
   margin-right: 20px;
   padding-right: 20px;
-  border-right: 1px solid rgba(250, 250, 250, 0.3);
+  border-right: 1px solid rgba(250, 250, 250, 0);
 }
 
 .background-header .main-nav .logo,
@@ -592,6 +614,7 @@ Header Style
     position: absolute;
     left: 30px;
     top: 0px;
+    
   }
   .background-header .main-nav .logo {
     top: 0px;
@@ -952,7 +975,11 @@ h2.accordion-header button {
 Courses Style
 --------------------------------------------- 
 */
-
+.down-content p.description {
+  margin-top: 10px; /* Ajusta según necesites */
+  font-size: 14px;  /* Opcional: para hacerlo más compacto */
+  color: #666;      /* Opcional: tono más suave para mejor lectura */
+}
 .courses {
   margin-top: 160px;
 }
@@ -1898,6 +1925,79 @@ body {
     margin-top: 30px;
   }
 }
+.custom-card {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 15px;
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  min-height: 250px;
+  margin-bottom: 10px;
+}
+
+.custom-card .card-body {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; /* Asegura que el contenido (imagen y texto) estén centrados */
+}
+
+.custom-card h4 {
+  margin-top: 15px;
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.custom-card img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  margin-bottom: 15px;
+  display: block; /* Hace que la imagen sea un bloque, lo que ayuda a centrarla */
+  margin-left: auto;  /* Centra la imagen horizontalmente */
+  margin-right: auto; /* Centra la imagen horizontalmente */
+}
+
+
+.video-box {
+  width: 100%;
+  max-height: 281px;
+  border-radius: 8px;
+  position: relative;
+}
+
+.code-container {
+  max-width: 100%;
+  max-height: 281px; /* Altura máxima antes de activar el slider */
+  overflow-y: auto; /* Activa el scroll vertical si el código es largo */
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+.code-box {
+  background: #f4f4f4;
+  padding: 15px;
+  border-radius: 5px;
+  text-align: left;
+  white-space: pre-wrap; /* Mantiene el formato del código */
+}
+.copy-btn {
+  position: absolute;
+  top: -40px;
+  right: 10px;
+  padding: 5px 12px;
+  background: #7a6ad8;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 3px;
+  transition: 0.3s ease-in-out;
+}
+.copy-btn:hover {
+  background: #7a6ad8;
+}
+
 
 @media (max-width: 1200px) {
   .header-area .main-nav #search input {

@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <title>Portafolio Bernardo - Fernando</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/templatemo-scholar.css">
+    <link rel="stylesheet" href="assets/css/owl.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet"href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+<!--
+
+TemplateMo 586 Scholar
+
+https://templatemo.com/tm-586-scholar
+
+-->
+  </head>
+
+<body>
+
+  <!-- ***** Preloader Start ***** -->
+  <div id="js-preloader" class="js-preloader">
+    <div class="preloader-inner">
+      <span class="dot"></span>
+      <div class="dots">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </div>
+  <!-- ***** Preloader End ***** -->
+
+  <!-- ***** Header Area Start ***** -->
+  <header class="header-area header-sticky">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <nav class="main-nav">
+                    <!-- ***** Logo Start ***** -->
+                    <a href="index.html" class="logo">
+                        <h1>Laboratorio de Redes Digitales de Datos</h1>
+                    </a>
+                    <!-- ***** Logo End ***** -->
+                  
+                    <!-- ***** Menu Start ***** -->
+                    <ul class="nav">
+                      <li class="scroll-to-section"><a href="index.html" class="active">Regresar a las prácticas</a></li>
+                      
+                  </ul>   
+                    <a class='menu-trigger'>
+                        <span>Menu</span>
+                    </a>
+                    <!-- ***** Menu End ***** -->
+                </nav>
+            </div>
+        </div>
+    </div>
+  </header>
+  <!-- ***** Header Area End ***** -->
+
+  <div class="main-banner" id="inicio">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="owl-carousel owl-banner">
+            <div class="">
+              <div class="header-text">
+                <div class="col-lg-12 text-center">
+                  <h1 class="mt-5 text-white">Práctica 1: “WiFi ESP32 Entradas y Salidas Digitales”</h1>
+                  <p class="text-white mt-3">Integrantes: Bernardo Bojalil Lorenzini, Fernando Agustín Hernández Rivas</p>
+                  <p class="text-white">Fecha: 31/01/2025</p>
+                  <p class="text-white">Primer parcial</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section id="contenido" class="container mt-5">
+    <div class="row">
+        <div class="row justify-content-center">
+            <h2 class="mt-5 mb-5">Resumen</h2>
+            <p>En esta práctica de laboratorio, se configuró el IDE de Arduino para programar el NodeMCU, instalando las herramientas necesarias según las instrucciones proporcionadas. Se revisó el pinout y los GPIO disponibles para su uso en la tarjeta seleccionada. Posteriormente, se desarrollaron diversos programas para controlar el encendido y apagado de un LED, comenzando con instrucciones básicas de encendido y apagado mediante código. Luego, se implementó un programa que alterna el estado del LED con retardos y se avanzó en la integración de botones para su control. Finalmente, se desarrollaron sistemas más complejos utilizando dos botones y condiciones lógicas.</p>
+
+            <h2 class="mt-5 mb-5">Introducción</h2>
+            <p>El ESP32 es una serie de microcontroladores de bajo costo y bajo consumo de energía desarrollados por Espressif, que integran capacidades de conectividad inalámbrica Wi-Fi y Bluetooth, junto con un procesador de doble núcleo. Su versatilidad y características avanzadas lo convierten en una opción popular para proyectos de Internet de las Cosas (IoT) y automatización del hogar. Considerado el sucesor del ESP8266, el ESP32 ofrece mejoras significativas, como mayor velocidad de procesamiento, más pines GPIO, soporte para Bluetooth clásico y BLE, así como una mayor eficiencia energética.
+
+              Entre sus especificaciones técnicas destacan un procesador Tensilica Xtensa LX6 de 32 bits de doble núcleo que opera a 160 o 240 MHz, memoria SRAM de 520 KB, conectividad Wi-Fi con velocidades de hasta 150 Mbps y compatibilidad con diversos periféricos como ADCs, DACs, I2C, UART, SPI, y PWM. Además, su compatibilidad con el entorno de desarrollo de Arduino y MicroPython facilita su programación para usuarios de diferentes niveles de experiencia.
+              
+              En esta práctica de laboratorio se llevarán a cabo varios ejercicios con el objetivo de familiarizarse con la configuración y programación del ESP32. Se comenzará configurando el IDE de Arduino para programar el NodeMCU, instalando las herramientas necesarias. Posteriormente, se revisará el pinout y los GPIO disponibles en el NodeMCU seleccionado.
+              
+              Se desarrollarán diversos programas para controlar el encendido y apagado de un LED. Estos ejercicios permitirán comprender el funcionamiento básico de los pines GPIO, el manejo de entradas y salidas digitales, así como la lógica de programación aplicada al ESP32.
+              
+              </p>
+
+            <h2 class="mt-5 mb-5">Material y Equipos</h2>
+            
+          <div class="container">
+            <div class="row justify-content-center"> 
+              <div class="col-lg-3 col-md-6 mb-4">
+                <div class="custom-card text-center">
+                  <div class="card-body">
+                    <img src="https://m.media-amazon.com/images/I/612eALAbpgL.jpg" alt="" class="img-fluid rounded-circle mb-3" style="width: 120px; height: 120px; object-fit: cover;">
+                    <h4>ESP32</h4>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="col-lg-3 col-md-6 mb-4">
+                <div class="custom-card text-center">
+                  <div class="card-body">
+                    <img src="https://tresdprinttech.com/wp-content/uploads/2024/02/PRB002.jpg" alt="" class="img-fluid rounded-circle mb-3" style="width: 120px; height: 120px; object-fit: cover;">
+                    <h4>2 Protoboards</h4>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-md-6 mb-4">
+                <div class="custom-card text-center">
+                  <div class="card-body">
+                    <img src="https://www.steren.com.mx/media/catalog/product/cache/295a12aacdcb0329a521cbf9876b29e7/image/1709082e0/led-de-5-mm-color-rojo-claro.jpg" alt="" class="img-fluid rounded-circle mb-3" style="width: 120px; height: 120px; object-fit: cover;">
+                    <h4>1 LED</h4>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-md-6 mb-4">
+                <div class="custom-card text-center">
+                  <div class="card-body">
+                    <img src="https://zenerbyte.com/wp-content/uploads/2023/01/Push-button-4-pines.jpg" alt="" class="img-fluid rounded-circle mb-3" style="width: 120px; height: 120px; object-fit: cover;">
+                    <h4>2 Botones</h4>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-md-6 mb-4">
+                <div class="custom-card text-center">
+                  <div class="card-body">
+                    <img src="https://silicio.mx/media/catalog/product/cache/1/image/650x650/5e06319eda06f020e43594a9c230972d/c/a/cab110c4m/Cables-Jumper-para-Protoboard---(200mm_165mm_125mm_80mm)-31.jpg" alt="" class="img-fluid rounded-circle mb-3" style="width: 120px; height: 120px; object-fit: cover;">
+                    <h4>+10 jumpers macho-macho</h4>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-md-6 mb-4">
+                <div class="custom-card text-center">
+                  <div class="card-body">
+                    <img src="https://http2.mlstatic.com/D_NQ_NP_839639-MLM41892100257_052020-O.webp">
+                    <h4>3 resistencias 220Ω </h4>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-md-6 mb-4">
+                <div class="custom-card text-center">
+                  <div class="card-body">
+                    <img src="https://m.media-amazon.com/images/I/71QGa1J+egL.jpg">
+                    <h4>1 cable micro USB a USB A </h4>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-md-6 mb-4">
+                <div class="custom-card text-center">
+                  <div class="card-body">
+                    <img src="https://intercompras.com/images/product/HUAWEI_53011XKM.jpg">
+                    <h4>Laptop</h4>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+
+          
+
+          <h2 class="mt-20 mb-5" style="margin-top: 30px;">Desarrollo</h2>
+
+
+<!-- Contenedor principal -->
+<div class="container">
+  <div class="row">
+    <!-- Card 1 -->
+    <div class="col-lg-12 mb-4">
+      <div class="card p-4">
+        <h5 class="card-title">Ejercicio 1: Desarrollar un programa de encendido de un LED mediante programación. </h5>
+        <p class="card-text" style="font-size: 14px; color: #555;">
+          Este ejercicio consiste en encender un LED conectado al pin GPIO 23 del ESP32. Se configura el pin como salida digital usando pinMode(23, OUTPUT) en la función setup(), que se ejecuta una sola vez al iniciar el programa. Luego, en la función loop(), que se repite de forma continua, se utiliza digitalWrite(23, HIGH) para enviar una señal de 3.3V al pin, lo que mantiene el LED encendido de forma constante.
+        </p>
+      </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="col-lg-12 mb-4">
+      <div class="card p-4">
+        <h5 class="card-title">Ejercicio 2: Desarrollar un programa de apagado de un LED mediante programación. </h5>
+        <p class="card-text" style="font-size: 14px; color: #555;">
+          Este ejercicio consiste en apagar un LED conectado al pin GPIO 23 del ESP32. En la función setup(), se configura el pin como salida digital mediante pinMode(23, OUTPUT). Luego, en la función loop(), que se ejecuta de forma continua, se utiliza digitalWrite(23, LOW) para enviar un nivel lógico bajo (0V) al pin, lo que mantiene el LED apagado de manera constante.
+        </p>
+      </div>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="col-lg-12 mb-4">
+      <div class="card p-4">
+        <h5 class="card-title">Ejercicio 3: Desarrollar un programa de encendido y apagado de un LED mediante retardos. </h5>
+        <p class="card-text" style="font-size: 14px; color: #555;">
+          El ejercicio de parpadeo de un LED consiste en encender y apagar un LED de forma intermitente, creando un efecto de parpadeo. Esto se logra alternando el estado del pin GPIO 23 entre alto (HIGH) y bajo (LOW), con retardos temporales definidos entre cada cambio de estado. En este caso, el LED se mantiene encendido durante 300 milisegundos y apagado durante otros 300 milisegundos de manera continua.
+        </p>
+      </div>
+    </div>
+
+    <div class="col-lg-12 mb-4">
+      <div class="card p-4">
+        <h5 class="card-title">Ejercicio 4: Desarrollar un sistema de encendido y apagado de un LED mediante el uso de botones.  </h5>
+        <p class="card-text" style="font-size: 14px; color: #555;">
+          Este ejercicio permite encender un LED utilizando un botón. El pin 21 está configurado como entrada para leer el estado del botón, y el pin 23 como salida para controlar el LED. Cuando se presiona el botón (entrada en alto), el LED se enciende; al soltarlo (entrada en bajo), el LED se apaga.
+        </p>
+      </div>
+    </div>
+
+    <div class="col-lg-14 mb-4">
+      <div class="card p-4">
+        <h5 class="card-title">Ejercicio 5: Desarrollar un sistema de encendido y apagado de un LED mediante el uso de dos botones y una condicional OR.  </h5>
+        <p class="card-text" style="font-size: 14px; color: #555;">
+          Este ejercicio consiste en encender un LED conectado al pin GPIO 23 del ESP32 cuando al menos uno de los dos botones, conectados a los pines 21 y 22, está presionado. En la función setup(), se configuran los pines de los botones como entradas y el pin del LED como salida. En la función loop(), se leen los estados de los botones y, mediante un condicional OR, si al menos uno de los botones está presionado, se enciende el LED; de lo contrario, el LED permanece apagado.
+        </p>
+      </div>
+    </div>
+
+    <div class="col-lg-12 mb-4">
+      <div class="card p-4">
+        <h5 class="card-title">Ejercicio 6: Desarrollar un sistema de encendido y apagado de un LED mediante el uso de dos botones y una condicional AND.  </h5>
+        <p class="card-text" style="font-size: 14px; color: #555;">
+          Este ejercicio enciende un LED conectado al pin GPIO 23 del ESP32 solo cuando ambos botones, conectados a los pines 21 y 22, están presionados al mismo tiempo. En la función setup(), se configuran los pines de los botones como entradas y el pin del LED como salida. En la función loop(), se leen los estados de los botones y, mediante un condicional AND, si ambos botones están presionados, se enciende el LED; de lo contrario, el LED se apaga.
+        </p>
+      </div>
+    </div>
+
+
+    
+    </div>
+  </div>
+</div>
+          
+
+<h2 class="mt-20 mb-5" style="margin-top: 30px;">Simulación</h2>
+
+<!-- Contenedor principal -->
+<div class="container">
+  <div class="row justify-content-center">
+    <!-- Card 1 -->
+    <div class="col-md-6 col-lg-4 mb-4">
+      <div class="card p-3 text-center">
+        <h5 class="card-title">Ejercicio 1</h5>
+        <video width="100%" height="200" controls>
+          <source src="assets/images/P1-E1.mp4" type="video/mp4">
+          Tu navegador no soporta la reproducción de video.
+        </video>
+      </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="col-md-6 col-lg-4 mb-4">
+      <div class="card p-3 text-center">
+        <h5 class="card-title">Ejercicio 2</h5>
+        <video width="100%" height="200" controls>
+          <source src="assets/images/P1-E2.mp4" type="video/mp4">
+          Tu navegador no soporta la reproducción de video.
+        </video>
+      </div>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="col-md-6 col-lg-4 mb-4">
+      <div class="card p-3 text-center">
+        <h5 class="card-title">Ejercicio 3</h5>
+        <video width="100%" height="200" controls>
+          <source src="assets/images/P1-E3.mp4" type="video/mp4">
+          Tu navegador no soporta la reproducción de video.
+        </video>
+      </div>
+    </div>
+
+    <!-- Card 4 -->
+    <div class="col-md-6 col-lg-4 mb-4">
+      <div class="card p-3 text-center">
+        <h5 class="card-title">Ejercicio 4</h5>
+        <video width="100%" height="200" controls>
+          <source src="assets/images/P1-E4.mp4" type="video/mp4">
+          Tu navegador no soporta la reproducción de video.
+        </video>
+      </div>
+    </div>
+
+    <!-- Card 4 -->
+    <div class="col-md-6 col-lg-4 mb-4">
+      <div class="card p-3 text-center">
+        <h5 class="card-title">Ejercicio 5</h5>
+        <video width="100%" height="200" controls>
+          <source src="assets/images/P1-E5.mp4" type="video/mp4">
+          Tu navegador no soporta la reproducción de video.
+        </video>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<h2 class="mt-20 mb-5" style="margin-top: 40px;">Construcción del Circuito</h2>
+
+
+<!-- Contenedor principal -->
+<div class="container">
+  <div class="row justify-content-center">
+    <!-- Card 1 -->
+    <div class="col-md-12 mb-4">
+      <div class="card p-4 shadow-lg rounded-lg">
+        <h4 class="card-title mb-4">Ejercicio 1: Encendido de un LED</h4>
+        <div class="row align-items-center">
+          <!-- Video -->
+          <div class="col-md-6">
+            <video class="video-box rounded-lg" controls>
+              <source src="assets/images/P1-V1.mp4" type="video/mp4">
+              Tu navegador no soporta la reproducción de video.
+            </video>
+          </div>
+          <!-- Código con slider vertical -->
+          <div class="col-md-6 position-relative">
+            <button class="copy-btn" onclick="copyCode('code1')">Copiar el código al portapapeles</button>
+            <div class="code-container rounded-lg">
+              <pre class="code-box"><code id="code1">
+// Configuración inicial del ESP32
+void setup() {
+    pinMode(23, OUTPUT); // Configura el pin GPIO 23 como salida digital
+}
+
+void loop() {
+    digitalWrite(23, HIGH); // Enciende el LED conectado al pin 23 enviando un nivel alto (3.3V)
+}
+              </code></pre>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-12 mb-4">
+      <div class="card p-4 shadow-lg rounded-lg">
+        <h4 class="card-title mb-4">Ejercicio 2: Apagado de un LED</h4>
+        <div class="row align-items-center">
+          <!-- Video -->
+          <div class="col-md-6">
+            <video class="video-box rounded-lg" controls>
+              <source src="assets/images/P1-V2.mp4" type="video/mp4">
+              Tu navegador no soporta la reproducción de video.
+            </video>
+          </div>
+          <!-- Código con slider vertical -->
+          <div class="col-md-6 position-relative">
+            <button class="copy-btn" onclick="copyCode('code1')">Copiar el código al portapapeles</button>
+            <div class="code-container rounded-lg">
+              <pre class="code-box"><code id="code1">
+// Configuración inicial
+void setup() {
+    pinMode(23, OUTPUT);  // Configura el pin GPIO 23 como salida digital
+}
+
+void loop() {
+    digitalWrite(23, LOW);  // Envía un nivel lógico bajo (0V) al pin 23, apagando el LED
+}
+              </code></pre>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-12 mb-4">
+      <div class="card p-4 shadow-lg rounded-lg">
+        <h4 class="card-title mb-4">Ejercicio 3: Parpadeo de un LED</h4>
+        <div class="row align-items-center">
+          <!-- Video -->
+          <div class="col-md-6">
+            <video class="video-box rounded-lg" controls>
+              <source src="assets/images/P1-V3.mp4" type="video/mp4">
+              Tu navegador no soporta la reproducción de video.
+            </video>
+          </div>
+          <!-- Código con slider vertical -->
+          <div class="col-md-6 position-relative">
+            <button class="copy-btn" onclick="copyCode('code1')">Copiar el código al portapapeles</button>
+            <div class="code-container rounded-lg">
+              <pre class="code-box"><code id="code1">
+// Configura el pin 23 como salida
+void setup() {
+    pinMode(23, OUTPUT);
+}
+
+void loop() {
+    digitalWrite(23, HIGH); // Enciende el LED
+    delay(300);             // Espera 300 ms
+
+    digitalWrite(23, LOW);  // Apaga el LED
+    delay(300);             // Espera 300 ms
+}
+              </code></pre>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-12 mb-4">
+      <div class="card p-4 shadow-lg rounded-lg">
+        <h4 class="card-title mb-4">Ejercicio 4: Encendido de un LED con botón</h4>
+        <div class="row align-items-center">
+          <!-- Video -->
+          <div class="col-md-6">
+            <video class="video-box rounded-lg" controls>
+              <source src="assets/images/P1-V4.mp4" type="video/mp4">
+              Tu navegador no soporta la reproducción de video.
+            </video>
+          </div>
+          <!-- Código con slider vertical -->
+          <div class="col-md-6 position-relative">
+            <button class="copy-btn" onclick="copyCode('code1')">Copiar el código al portapapeles</button>
+            <div class="code-container rounded-lg">
+              <pre class="code-box"><code id="code1">
+void setup() {
+    pinMode(23, OUTPUT); // Configura el pin 23 como salida (LED)
+    pinMode(21, INPUT);  // Configura el pin 21 como entrada (botón)
+}
+
+void loop() {
+    digitalWrite(23, digitalRead(21)); // Enciende/apaga el LED según el botón
+}
+              </code></pre>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-12 mb-4">
+      <div class="card p-4 shadow-lg rounded-lg">
+        <h4 class="card-title mb-4">Ejercicio 5: Condicional OR</h4>
+        <div class="row align-items-center">
+          <!-- Video -->
+          <div class="col-md-6">
+            <video class="video-box rounded-lg" controls>
+              <source src="assets/images/P1-V5.mp4" type="video/mp4">
+              Tu navegador no soporta la reproducción de video.
+            </video>
+          </div>
+          <!-- Código con slider vertical -->
+          <div class="col-md-6 position-relative">
+            <button class="copy-btn" onclick="copyCode('code1')">Copiar el código al portapapeles</button>
+            <div class="code-container rounded-lg">
+              <pre class="code-box"><code id="code1">
+void setup() {
+    pinMode(23, OUTPUT); // LED como salida
+    pinMode(21, INPUT);  // Botón 1 como entrada
+    pinMode(22, INPUT);  // Botón 2 como entrada
+}
+
+void loop() {
+    int estadoBoton1 = digitalRead(21); // Lee el estado del botón 1
+    int estadoBoton2 = digitalRead(22); // Lee el estado del botón 2
+
+    if (estadoBoton1 || estadoBoton2) {  // Si algún botón está presionado
+        digitalWrite(23, HIGH); // Enciende el LED
+    } else {
+        digitalWrite(23, LOW); // Apaga el LED
+    }
+}
+              </code></pre>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-12 mb-4">
+      <div class="card p-4 shadow-lg rounded-lg">
+        <h4 class="card-title mb-4">Ejercicio 6: Condicional AND</h4>
+        <div class="row align-items-center">
+          <!-- Video -->
+          <div class="col-md-6">
+            <video class="video-box rounded-lg" controls>
+              <source src="assets/images/P1-V6.mp4" type="video/mp4">
+              Tu navegador no soporta la reproducción de video.
+            </video>
+          </div>
+          <!-- Código con slider vertical -->
+          <div class="col-md-6 position-relative">
+            <button class="copy-btn" onclick="copyCode('code1')">Copiar el código al portapapeles</button>
+            <div class="code-container rounded-lg">
+              <pre class="code-box"><code id="code1">
+void setup() {
+    pinMode(23, OUTPUT); // LED como salida
+    pinMode(21, INPUT);  // Botón 1 como entrada
+    pinMode(22, INPUT);  // Botón 2 como entrada
+}
+
+void loop() {
+    int estadoBoton1 = digitalRead(21); // Lee el estado del botón 1
+    int estadoBoton2 = digitalRead(22); // Lee el estado del botón 2
+
+    if (estadoBoton1 && estadoBoton2) {  // Si ambos botones están presionados
+        digitalWrite(23, HIGH); // Enciende el LED
+    } else {
+        digitalWrite(23, LOW); // Apaga el LED
+    }
+}
+
+              </code></pre>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <h2 class="mt-5 mb-5">Conclusiones</h2>
+            <p>En conclusión, este ejercicio nos permitió aprender los pasos iniciales para programar el ESP32, familiarizándonos con la configuración de pines como entrada y salida, así como con el uso de condicionales y el leguaje de programación. Además, nos ayudó a comprender cómo trabajar con el IDE de Arduino, una herramienta fundamental para desarrollar proyectos más complejos en el futuro.</p>
+
+              <h2 class="mt-5 mb-5">Refrencias</h2>
+              <ul>
+                <li><a href="https://programarfacil.com/esp8266/esp32/" target="_blank">Carmenate, J. G. (2022, 7 marzo). ESP32 Wifi + Bluetooth en un solo lugar. Programarfacil Arduino y Home Assistant.</a></li>
+                <li><a href="https://www.electrosoftcloud.com/esp32-configuracion-y-primeros-pasos/" target="_blank">Carrasco, D. (2021, 9 abril). ESP32: Configuración y primeros pasos. ElectroSoftCloud.</a></li>
+                <li><a href="https://www.espressif.com/en/products/socs/esp32" target="_blank">ESP32 Wi-Fi & Bluetooth SOC | Espressif Systems. (s. f.).</a></li>
+                <li><a href="https://randomnerdtutorials.com/getting-started-with-esp32/" target="_blank">Santos, R., & Santos, R. (2024, 5 agosto). Getting Started with the ESP32 Development Board | Random Nerd Tutorials.</a></li>
+              </ul>
+              <div></div>
+              <div></div>
+                        
+  </div>
+</div>
+
+<!-- Script para copiar el código -->
+<script>
+function copyCode(id) {
+  var code = document.getElementById(id).innerText;
+  navigator.clipboard.writeText(code).then(() => {
+    alert("Código copiado al portapapeles!");
+  });
+}
+</script>
+
+
+
+
+</section>
+
+<footer>
+  <div class="container">
+    <div class="col-lg-30">
+      <p>Copyright © 2036 Scholar Organization. All rights reserved. &nbsp;&nbsp;&nbsp; Design: <a href="https://templatemo.com" rel="nofollow" target="_blank">TemplateMo</a></p>
+    </div>
+  </div>
+</footer>
+
+<!-- Scripts -->
+<!-- Bootstrap core JavaScript -->
+<script src="vendor/jquery/jquery.min.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<script src="assets/js/isotope.min.js"></script>
+<script src="assets/js/owl-carousel.js"></script>
+<script src="assets/js/counter.js"></script>
+<script src="assets/js/custom.js"></script>
+
+</body>
+</html>
