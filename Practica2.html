@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <script>
+      window.addEventListener('load', function() {
+        setTimeout(() => {
+          window.scrollTo(0, 0);
+        }, 200); // Espera unos milisegundos y luego desplaza al inicio
+      });
+    </script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <title>Portafolio Bernardo - Fernando</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/templatemo-scholar.css">
+    <link rel="stylesheet" href="assets/css/owl.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet"href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+<!--
+
+TemplateMo 586 Scholar
+
+https://templatemo.com/tm-586-scholar
+
+-->
+  </head>
+
+<body>
+
+  <!-- ***** Preloader Start ***** -->
+  <div id="js-preloader" class="js-preloader">
+    <div class="preloader-inner">
+      <span class="dot"></span>
+      <div class="dots">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </div>
+  <!-- ***** Preloader End ***** -->
+
+  <!-- ***** Header Area Start ***** -->
+  <header class="header-area header-sticky">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <nav class="main-nav">
+                    <!-- ***** Logo Start ***** -->
+                    <a href="index.html" class="logo">
+                        <h1>Laboratorio de Redes Digitales de Datos</h1>
+                    </a>
+                    <!-- ***** Logo End ***** -->
+                  
+                    <!-- ***** Menu Start ***** -->
+                    <ul class="nav">
+                      <li class="scroll-to-section"><a href="index.html" class="active">Regresar a las prácticas</a></li>
+                      
+                  </ul>   
+                    <a class='menu-trigger'>
+                        <span>Menu</span>
+                    </a>
+                    <!-- ***** Menu End ***** -->
+                </nav>
+            </div>
+        </div>
+    </div>
+  </header>
+  <!-- ***** Header Area End ***** -->
+
+  <div class="main-banner" id="inicio">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="owl-carousel owl-banner">
+            <div class="">
+              <div class="header-text">
+                <div class="col-lg-12 text-center">
+                  <h1 class="mt-5 text-white">Práctica 2: “Wifi ESP32 – Sensores Digitales, Analógicos e Inteligentes” </h1>
+                  <p class="text-white mt-3">Integrantes: Bernardo Bojalil Lorenzini, Fernando Agustín Hernández Rivas</p>
+                  <p class="text-white">Fecha: 14/02/2025</p>
+                  <p class="text-white">Primer parcial</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section id="contenido" class="container mt-5">
+    <div class="row">
+        <div class="row justify-content-center">
+            <h2 class="mt-5 mb-5">Resumen</h2>
+            <p>El objetivo de esta práctica es conocer, identificar y verificar el funcionamiento de sensores digitales, analógicos e inteligentes mediante su integración con el ESP32. Se trabajará con un botón (sensor digital), un potenciómetro (sensor analógico), un DHT22 (sensor inteligente) y un sensor PIR para la detección de movimiento. Además, se desarrollará un programa para monitorear el sensor PIR. Esta práctica permitirá comprender el funcionamiento y las aplicaciones de distintos tipos de sensores en sistemas embebidos.</p>
+
+            <h2 class="mt-5 mb-5">Introducción</h2>
+            <p>Los sensores son componentes fundamentales en los sistemas embebidos y la automatización, ya que permiten la adquisición de datos del entorno en tiempo real para su posterior procesamiento y toma de decisiones. En esta práctica, se trabajará con sensores digitales, analógicos e inteligentes, cada uno con características específicas que determinan su aplicación. Los sensores digitales miden una magnitud física, como la temperatura, la presión, la luz o la humedad, y cuantifican esa medición en formato digital, operando en dos estados lógicos (alto o bajo). Los sensores analógicos miden una cantidad física y proporcionan una señal de salida proporcional a lo medido. Los sensores inteligentes recogen datos del entorno y utilizan recursos informáticos integrados para procesarlos y realizar funciones predefinidas antes de transmitirlos. Estos se aplican en redes inteligentes, reconocimiento en campo de batalla, exploración y diversas aplicaciones científicas. El sensor PIR mide la luz infrarroja radiada por los objetos en su campo de visión, ajustando el tiempo de activación de salida (3s a 300s) y la sensibilidad (3m a 7m). Este sensor es clave en la detección de movimiento mediante cambios en la radiación infrarroja y se usa ampliamente en seguridad y automatización.</p>
+
+            <h2 class="mt-5 mb-5">Material y Equipos</h2>
+            
+          <div class="container">
+            <div class="row justify-content-center"> 
+              <div class="col-lg-3 col-md-6 mb-4">
+                <div class="custom-card text-center">
+                  <div class="card-body">
+                    <img src="https://m.media-amazon.com/images/I/612eALAbpgL.jpg" alt="" class="img-fluid rounded-circle mb-3" style="width: 120px; height: 120px; object-fit: cover;">
+                    <h4>ESP32</h4>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="col-lg-3 col-md-6 mb-4">
+                <div class="custom-card text-center">
+                  <div class="card-body">
+                    <img src="https://tresdprinttech.com/wp-content/uploads/2024/02/PRB002.jpg" alt="" class="img-fluid rounded-circle mb-3" style="width: 120px; height: 120px; object-fit: cover;">
+                    <h4>2 Protoboards</h4>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-md-6 mb-4">
+                <div class="custom-card text-center">
+                  <div class="card-body">
+                    <img src="https://www.steren.com.mx/media/catalog/product/cache/295a12aacdcb0329a521cbf9876b29e7/image/1709082e0/led-de-5-mm-color-rojo-claro.jpg" alt="" class="img-fluid rounded-circle mb-3" style="width: 120px; height: 120px; object-fit: cover;">
+                    <h4>1 LED</h4>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-md-6 mb-4">
+                <div class="custom-card text-center">
+                  <div class="card-body">
+                    <img src="https://zenerbyte.com/wp-content/uploads/2023/01/Push-button-4-pines.jpg" alt="" class="img-fluid rounded-circle mb-3" style="width: 120px; height: 120px; object-fit: cover;">
+                    <h4>1 Botón</h4>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-md-6 mb-4">
+                <div class="custom-card text-center">
+                  <div class="card-body">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhXxIj0PLmngFeBFfF0aZEjqhKooLu7UfqAQ&s" alt="" class="img-fluid rounded-circle mb-3" style="width: 120px; height: 120px; object-fit: cover;">
+                    <h4>1 Potenciómetro 5k</h4>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-md-6 mb-4">
+                <div class="custom-card text-center">
+                  <div class="card-body">
+                    <img src="https://www.geekfactory.mx/wp-content/uploads/2014/04/dht22-sensor-de-temperatura-y-humedad-relativa.jpg" alt="" class="img-fluid rounded-circle mb-3" style="width: 120px; height: 120px; object-fit: cover;">
+                    <h4>1 Sensor DHT22</h4>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6 mb-4">
+                <div class="custom-card text-center">
+                  <div class="card-body">
+                    <img src="https://www.steren.com.mx/media/catalog/product/cache/0236bbabe616ddcff749ccbc14f38bf2/image/19454216b/sensor-de-movimiento-pir.jpg" alt="" class="img-fluid rounded-circle mb-3" style="width: 120px; height: 120px; object-fit: cover;">
+                    <h4>1 Sensor PIR</h4>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-md-6 mb-4">
+                <div class="custom-card text-center">
+                  <div class="card-body">
+                    <img src="https://silicio.mx/media/catalog/product/cache/1/image/650x650/5e06319eda06f020e43594a9c230972d/c/a/cab110c4m/Cables-Jumper-para-Protoboard---(200mm_165mm_125mm_80mm)-31.jpg" alt="" class="img-fluid rounded-circle mb-3" style="width: 120px; height: 120px; object-fit: cover;">
+                    <h4>+10 jumpers macho-macho y hembra-macho</h4>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-md-6 mb-4">
+                <div class="custom-card text-center">
+                  <div class="card-body">
+                    <img src="https://http2.mlstatic.com/D_NQ_NP_839639-MLM41892100257_052020-O.webp">
+                    <h4>Resistencias 220Ω y 1kΩ </h4>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-md-6 mb-4">
+                <div class="custom-card text-center">
+                  <div class="card-body">
+                    <img src="https://m.media-amazon.com/images/I/71QGa1J+egL.jpg">
+                    <h4>1 cable micro USB a USB A </h4>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-md-6 mb-4">
+                <div class="custom-card text-center">
+                  <div class="card-body">
+                    <img src="https://intercompras.com/images/product/HUAWEI_53011XKM.jpg">
+                    <h4>Laptop</h4>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+
+          
+
+          <h2 class="mt-20 mb-5" style="margin-top: 30px;">Desarrollo</h2>
+
+
+<!-- Contenedor principal -->
+<div class="container">
+  <div class="row">
+    <!-- Card 1 -->
+    <div class="col-lg-12 mb-4">
+      <div class="card p-4">
+        <h5 class="card-title">Ejercicio 1: Desarrollar un programa de encendido de un LED con un botón (sensor digital). </h5>
+        <p class="card-text" style="font-size: 14px; color: #555;">
+          Este ejercicio consiste en utilizar un botón y un LED con un microcontrolador. El botón está conectado al puerto GPIO 33 y el LED al puerto GPIO 32. En el código, se lee el estado del botón; si está presionado (estado 1), el LED se enciende, y si no lo está (estado 0), el LED se apaga.
+        </p>
+      </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="col-lg-12 mb-4">
+      <div class="card p-4">
+        <h5 class="card-title">Ejercicio 2: Desarrollar un programa de encendido de un LED con un potenciómetro (sensor analógico). </h5>
+        <p class="card-text" style="font-size: 14px; color: #555;">
+          Este ejercicio usa un potenciómetro para controlar un LED. El potenciómetro está conectado al puerto GPIO 33 y el LED al puerto GPIO 32. El valor analógico del potenciómetro se lee continuamente. Si el valor es mayor o igual a 2048 (mitad del rango de 0-4095), el LED se enciende; de lo contrario, se apaga.
+        </p>
+      </div>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="col-lg-12 mb-4">
+      <div class="card p-4">
+        <h5 class="card-title">Ejercicio 3: Control de LED basado en la Humedad con Sensor DHT22 (sensor inteligente). </h5>
+        <p class="card-text" style="font-size: 14px; color: #555;">
+          Este ejercicio utiliza un sensor DHT22 para medir la temperatura y la humedad. El sensor está conectado al puerto GPIO 33 y el LED al puerto GPIO 32. El código lee cada segundo la temperatura y humedad, imprimiendo los valores en el monitor serial. Si la humedad es superior al 50%, el LED se enciende, y si es menor o igual, se apaga.
+        </p>
+      </div>
+    </div>
+
+    <div class="col-lg-12 mb-4">
+      <div class="card p-4">
+        <h5 class="card-title">Ejercicio 4: Detección de Movimiento con Sensor PIR (sensor digital).  </h5>
+        <p class="card-text" style="font-size: 14px; color: #555;">
+          Este ejercicio utiliza un sensor PIR para detectar movimiento. El sensor está conectado al puerto GPIO 33 y el LED al puerto GPIO 32. El código detecta el movimiento y enciende el LED, mientras imprime un mensaje en el monitor serial cuando detecta o deja de detectar movimiento. Si no hay movimiento, el LED permanece apagado.
+        </p>
+      </div>
+    </div>
+    </div>
+  </div>
+</div>
+          
+
+
+<h2 class="mt-20 mb-5" style="margin-top: 30px;">Simulación</h2>
+
+<!-- Contenedor principal -->
+<div class="container">
+  <div class="row justify-content-center">
+
+<!-- Card 1 -->
+<div class="col-12 mb-4">
+  <div class="card p-4 text-center">
+    <h3 class="card-title mb-3">Ejercicio 1</h3>
+    
+    <h5 class="mb-2">Video</h5>
+    <video width="100%" height="350" controls>
+      <source src="assets/images/P2-E1.mp4" type="video/mp4">
+      Tu navegador no soporta la reproducción de video.
+    </video>
+    
+    <h5 class="mt-4 mb-2">Simulación Wokwi</h5>
+    <iframe src="https://wokwi.com/projects/423040383325185025" 
+            width="100%" 
+            height="500" 
+            frameborder="0" 
+            allowfullscreen>
+            
+            
+            
+    </iframe>
+  </div>
+</div>
+
+<div class="col-12 mb-4">
+  <div class="card p-4 text-center">
+    <h3 class="card-title mb-3">Ejercicio 2</h3>
+    
+    <h5 class="mb-2">Video</h5>
+    <video width="100%" height="350" controls>
+      <source src="assets/images/P2-E2.mp4" type="video/mp4">
+      Tu navegador no soporta la reproducción de video.
+    </video>
+    
+    <h5 class="mt-4 mb-2">Simulación Wokwi</h5>
+    <iframe src="https://wokwi.com/projects/423041455566596097" 
+            width="100%" 
+            height="500" 
+            frameborder="0" 
+            allowfullscreen>
+            
+            
+            
+    </iframe>
+  </div>
+</div>
+
+<div class="col-12 mb-4">
+  <div class="card p-4 text-center">
+    <h3 class="card-title mb-3">Ejercicio 3</h3>
+    
+    <h5 class="mb-2">Video</h5>
+    <video width="100%" height="350" controls>
+      <source src="assets/images/P2-E3.mp4" type="video/mp4">
+      Tu navegador no soporta la reproducción de video.
+    </video>
+    
+    <h5 class="mt-4 mb-2">Simulación Wokwi</h5>
+    <iframe src="https://wokwi.com/projects/423042432240857089" 
+            width="100%" 
+            height="500" 
+            frameborder="0" 
+            allowfullscreen>
+            
+            
+            
+    </iframe>
+  </div>
+</div>
+
+<div class="col-12 mb-4">
+  <div class="card p-4 text-center">
+    <h3 class="card-title mb-3">Ejercicio 4</h3>
+    
+    <h5 class="mb-2">Video</h5>
+    <video width="100%" height="350" controls>
+      <source src="assets/images/P2-E4.mp4" type="video/mp4">
+      Tu navegador no soporta la reproducción de video.
+    </video>
+    
+    <h5 class="mt-4 mb-2">Simulación Wokwi</h5>
+    <iframe src="https://wokwi.com/projects/423044355444937729" 
+            width="100%" 
+            height="500" 
+            frameborder="0" 
+            allowfullscreen>
+            
+            
+            
+    </iframe>
+  </div>
+</div>
+
+
+<h2 class="mt-5 mb-5">Diseño (En la práctica solo se diseñó el ejercicio 4)</h2>
+            <p>El objetivo de este ejercicio es implementar un sistema que detecte movimiento mediante un sensor PIR y encienda un LED como indicativo de detección. El sensor PIR se conecta a un puerto GPIO de la placa, y el LED se utiliza para proporcionar una señal visual de que el movimiento ha sido detectado. Además, el sistema enviará un mensaje al monitor serial cuando se detecte o termine el movimiento.
+
+              En el diagrama de conexión, el sensor PIR tiene tres pines: VCC, GND, y OUT. El pin VCC se conecta al pin de alimentación (5V) de la placa y el pin GND a tierra. El pin OUT, que es la salida del sensor, se conecta al pin GPIO 33 de la placa, que se utilizará como entrada digital para leer el estado del sensor.
+              
+              El LED se conecta al pin GPIO 32 de la placa como salida digital. El ánodo del LED se conecta al pin GPIO 32 y el cátodo a tierra, con un resistor en serie para limitar la corriente al LED, si es necesario.</p>
+              <figure style="text-align: center; margin: 20px auto; width: 50%;">
+                <img src="assets/images/P2-E4 FOTO.jpeg" alt="Descripción de la imagen" style="width: 100%;">
+                <figcaption style="font-size: 14px; color: gray; margin-top: 5px;">
+                    Diagrama de conexión del ejercicio 4.
+                </figcaption>
+            </figure>
+            
+
+            <p>El código (ubicado en la sección Construcción del Circuito) comienza definiendo dos pines: ledPin (pin GPIO 32) para controlar el LED y inputPin (pin GPIO 33) para leer el estado del sensor PIR. Además, se define una variable pirState que se utilizará para almacenar el estado del sensor (si está detectando movimiento o no) y la variable val que leerá el valor del sensor.
+
+              En la función setup(), los pines se configuran adecuadamente. El pin del LED se configura como salida usando pinMode(ledPin, OUTPUT) y el pin del sensor PIR como entrada con pinMode(inputPin, INPUT). Además, se inicia la comunicación serial con Serial.begin(115200), lo que permitirá enviar mensajes al monitor serial.
+              
+              Dentro de la función loop(), el programa constantemente lee el estado del sensor PIR con la función digitalRead(inputPin). Si el valor leído es HIGH, significa que el sensor ha detectado movimiento, por lo que el LED se enciende mediante digitalWrite(ledPin, HIGH) y se imprime el mensaje "¡Movimiento detectado!" en el monitor serial. Si el estado del sensor es LOW (sin movimiento), el LED se apaga utilizando digitalWrite(ledPin, LOW) y se muestra el mensaje "¡Movimiento terminado!".
+              
+              La variable pirState se utiliza para evitar que los mensajes de detección y terminación de movimiento se repitan constantemente. Si el movimiento acaba de ser detectado (cuando pirState es LOW), se actualiza el estado de pirState a HIGH y viceversa cuando el movimiento cesa. Esto asegura que los mensajes en el monitor serial solo se envíen una vez cuando el estado del movimiento cambia.
+              
+              Este ciclo se repite continuamente debido a la función loop(), que permite que el sistema esté siempre atento a los cambios en el estado del sensor PIR.</p>
+
+   
+
+
+<h2 class="mt-20 mb-5" style="margin-top: 40px;">Construcción del Circuito</h2>
+
+
+<!-- Contenedor principal -->
+<div class="container">
+  <div class="row justify-content-center">
+    <!-- Card 1 -->
+    <div class="col-md-12 mb-4">
+      <div class="card p-4 shadow-lg rounded-lg">
+        <h4 class="card-title mb-4">Ejercicio 1: Sensor digital (botón)</h4>
+        <div class="row align-items-center">
+          <!-- Video -->
+          <div class="col-md-6">
+            <video class="video-box rounded-lg" controls>
+              <source src="assets/images/P2-V1.mp4" type="video/mp4">
+              Tu navegador no soporta la reproducción de video.
+            </video>
+          </div>
+          <!-- Código con slider vertical -->
+          <div class="col-md-6 position-relative">
+            <button class="copy-btn" onclick="copyCode('code1')">Copiar el código al portapapeles</button>
+            <div class="code-container rounded-lg">
+              <pre class="code-box"><code id="code1">
+//Puertos GPIO
+int boton=33;
+int led=32;
+
+//Variables status
+int status_boton=0;
+
+void setup() {
+  // put your setup code here, to run once:
+  pinMode(led, OUTPUT); // Configurar puerto 32 como salida
+  pinMode(boton, INPUT); // Configurar puerto 33 como entrada
+}
+
+void loop() {
+  // put your main code here, to run repeatedly:
+  status_boton = digitalRead(boton);
+
+  if(status_boton == 1){
+    digitalWrite(led, HIGH);
+  }
+  else{
+    digitalWrite(led, LOW);
+  }
+}
+              </code></pre>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-12 mb-4">
+      <div class="card p-4 shadow-lg rounded-lg">
+        <h4 class="card-title mb-4">Ejercicio 2: Sensor Analógico (Potenciómetro)</h4>
+        <div class="row align-items-center">
+          <!-- Video -->
+          <div class="col-md-6">
+            <video class="video-box rounded-lg" controls>
+              <source src="assets/images/P2-V2.mp4" type="video/mp4">
+              Tu navegador no soporta la reproducción de video.
+            </video>
+          </div>
+          <!-- Código con slider vertical -->
+          <div class="col-md-6 position-relative">
+            <button class="copy-btn" onclick="copyCode('code2')">Copiar el código al portapapeles</button>
+            <div class="code-container rounded-lg">
+              <pre class="code-box"><code id="code2">
+//Puertos GPIO
+int pot = 33;
+int led = 32;
+
+//Variables status
+int valor_analogico = 0;
+
+void setup() {
+  // put your setup code here, to run once:
+  pinMode(led, OUTPUT); // Configurar puerto 32 como salida
+  //Serial.begin(115200);
+}
+
+void loop() {
+  // put your main code here, to run repeatedly:
+  valor_analogico = analogRead(pot);
+
+  //Serial.println(valor_analogico);
+
+  if (valor_analogico >= 2048) {
+    digitalWrite(led, HIGH);
+  }
+  else {
+    digitalWrite(led, LOW);
+  }
+}
+              </code></pre>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-12 mb-4">
+      <div class="card p-4 shadow-lg rounded-lg">
+        <h4 class="card-title mb-4">Ejercicio 3: Sensor Inteligente (DHT22)</h4>
+        <div class="row align-items-center">
+          <!-- Video -->
+          <div class="col-md-6">
+            <video class="video-box rounded-lg" controls>
+              <source src="assets/images/P2-V3.mp4" type="video/mp4">
+              Tu navegador no soporta la reproducción de video.
+            </video>
+          </div>
+          <!-- Código con slider vertical -->
+          <div class="col-md-6 position-relative">
+            <button class="copy-btn" onclick="copyCode('code3')">Copiar el código al portapapeles</button>
+            <div class="code-container rounded-lg">
+              <pre class="code-box"><code id="code3">
+//Librerias
+#include <DHT.h>
+
+//Puertos GPIO
+int led = 32;
+
+//DHT22
+DHT dht(33, DHT22); // DHTPIN, DHTTYPE
+
+//Variables status
+int valor_temperatura = 0;
+int valor_humedad = 0;
+
+void setup() {
+  // put your setup code here, to run once:
+  pinMode(led, OUTPUT); // Configurar puerto 32 como salida
+  dht.begin(); // Inicializamos DHT
+  Serial.begin(115200);
+}
+
+void loop() {
+  // put your main code here, to run repeatedly:
+  delay(1000);
+  valor_temperatura = dht.readTemperature();
+  valor_humedad = dht.readHumidity();
+
+  Serial.print("Temperatura:");
+  Serial.println(valor_temperatura);
+  Serial.print("Humedad:");
+  Serial.println(valor_humedad);
+
+  if (valor_humedad > 50) { // Si la humedad es mayor a 50%
+    digitalWrite(led, HIGH);
+  }
+  else{
+    digitalWrite(led, LOW);
+  }
+}
+              </code></pre>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-12 mb-4">
+      <div class="card p-4 shadow-lg rounded-lg">
+        <h4 class="card-title mb-4">Ejercicio 4: Sensor digital (PIR)</h4>
+        <div class="row align-items-center">
+          <!-- Video -->
+          <div class="col-md-6">
+            <video class="video-box rounded-lg" controls>
+              <source src="assets/images/P2-V4.mp4" type="video/mp4">
+              Tu navegador no soporta la reproducción de video.
+            </video>
+          </div>
+          <!-- Código con slider vertical -->
+          <div class="col-md-6 position-relative">
+            <button class="copy-btn" onclick="copyCode('code4')">Copiar el código al portapapeles</button>
+            <div class="code-container rounded-lg">
+              <pre class="code-box"><code id="code4">
+int ledPin = 32;                // LED en el pin 32
+int inputPin = 33;              // Sensor PIR en el pin 33
+int pirState = LOW;             // Inicialmente, no hay movimiento detectado
+int val = 0;                    // Variable para leer el estado del pin
+
+void setup() {
+  pinMode(ledPin, OUTPUT);      // Declarar LED como salida
+  pinMode(inputPin, INPUT);     // Declarar sensor como entrada
+
+  Serial.begin(115200);
+}
+
+void loop() {
+  val = digitalRead(inputPin);  // Leer el valor de entrada
+  if (val == HIGH) {            // Comprobar si la entrada es ALTA
+    digitalWrite(ledPin, HIGH); // Encender el LED
+    if (pirState == LOW) {
+      // Se acaba de detectar movimiento
+      Serial.println("¡Movimiento detectado!");
+      pirState = HIGH;
+    }
+  } else {
+    digitalWrite(ledPin, LOW); // Apagar el LED
+    if (pirState == HIGH) {
+      // Se acaba de detener el movimiento
+      Serial.println("¡Movimiento terminado!");
+      pirState = LOW;
+    }
+  }
+}
+              </code></pre>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <h2 class="mt-5 mb-5">Resultados</h2>
+    <p>Todos los ejercicios se realizaron con éxito y funcionaron de acuerdo a lo planeado. En cada uno de ellos, los sensores respondieron correctamente a las entradas, y los LEDs se encendieron o apagaron según las condiciones establecidas en el código.
+
+      En el ejercicio de detección de movimiento con sensor PIR (el único diseñado por el equipo), se presentó un inconveniente con el sensor. El LED conectado al sistema parpadeaba de manera constante, lo que no era el comportamiento esperado. Tras revisar las conexiones y el código, se determinó que el sensor PIR estaba dañado. Este fallo provocaba lecturas erroneas, lo que resultaba en el parpadeo del LED sin una detección real de movimiento. Una vez identificado el problema, el sensor fue reemplazado por uno funcional, y el sistema volvió a operar correctamente, con el LED encendiéndose únicamente cuando el movimiento era detectado y apagándose al cesar el mismo.</p>
+    
+    <h2 class="mt-5 mb-5">Conclusiones</h2>
+    <p>En esta práctica, exploramos el funcionamiento de sensores digitales, analógicos e inteligentes, comprendiendo su relevancia para la adquisición y procesamiento de datos del mundo físico. Estos dispositivos son fundamentales en nuestra vida cotidiana, presentes en aplicaciones como sistemas de seguridad, electrodomésticos inteligentes, monitoreo ambiental, domótica y dispositivos médicos, entre otros.</p>
+    <p>A través de la implementación y simulación de los ejercicios, comprendimos la diferencia entre las lecturas digitales, que entregan valores binarios (encendido/apagado, alto/bajo), y las analógicas, que ofrecen un rango continuo de valores, permitiéndonos interpretar fenómenos como la temperatura, la humedad o la luz. Esta distinción es esencial para convertir variables del mundo real en datos que los sistemas computacionales pueden analizar y procesar.</p>
+    <p>Además, esta práctica resalta la importancia de los sensores como puentes entre el mundo físico y el digital, facilitando la creación de soluciones a problemas reales mediante sistemas automatizados. Comprender cómo obtener, interpretar y actuar según estas lecturas es clave para desarrollar proyectos que impacten positivamente a la sociedad.</p>
+
+
+              <h2 class="mt-5 mb-5">Refrencias</h2>
+              <ul>
+                <li><a href="https://www.unipamplona.edu.co/unipamplona/portalIG/home_74/recursos/visual-basic-para-excel/17052017/u5_movimiento.jsp" target="_blank">Cursos de Sistemas - Programa de Ingeniería de Sistemas Unipamplona - Sensor de Movimiento PIR HC-SR501. (s. f.).</a></li>
+                <li><a href="https://www.computerweekly.com/es/definicion/Sensor-inteligente" target="_blank">De TechTarget, C. (2021, 26 enero). Sensor inteligente. ComputerWeekly.es.</a></li>
+                <li><a href="https://complubot.com/sensores-digitales-vs-sensores-analogicos-explorando-sus-diferencias-y-aplicaciones-practicas/" target="_blank">Rubén. (2024, 29 octubre). Sensores Digitales vs. Sensores Analógicos: Explorando sus Diferencias y Aplicaciones Prácticas. Complubot Robótica Educativa.</a></li>
+                <li><a href="https://www.processsensing.com/es-es/blog/sensores-digitales-frente-a-analogicos.htm" target="_blank">Sensores analógicos frente a digitales: factores de coste a tener en cuenta. (s. f.).</a></li>
+            </ul>
+            
+              <div></div>
+              <div></div>
+                        
+  </div>
+</div>
+
+<!-- Script para copiar el código -->
+<script>
+function copyCode(id) {
+  var code = document.getElementById(id).innerText;
+  navigator.clipboard.writeText(code).then(() => {
+    alert("Código copiado al portapapeles!");
+  });
+}
+</script>
+
+
+
+
+</section>
+
+<footer>
+  <div class="container">
+    <div class="col-lg-30">
+      <p>Copyright © 2036 Scholar Organization. All rights reserved. &nbsp;&nbsp;&nbsp; Design: <a href="https://templatemo.com" rel="nofollow" target="_blank">TemplateMo</a></p>
+    </div>
+  </div>
+</footer>
+
+<!-- Scripts -->
+<!-- Bootstrap core JavaScript -->
+<script src="vendor/jquery/jquery.min.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<script src="assets/js/isotope.min.js"></script>
+<script src="assets/js/owl-carousel.js"></script>
+<script src="assets/js/counter.js"></script>
+<script src="assets/js/custom.js"></script>
+
+
+
+
+</body>
+
+</script>
+
+</html>
