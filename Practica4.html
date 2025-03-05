@@ -1,0 +1,754 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <script>
+      window.addEventListener('load', function() {
+        setTimeout(() => {
+          window.scrollTo(0, 0);
+        }, 200); // Espera unos milisegundos y luego desplaza al inicio
+      });
+    </script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <title>Portafolio Bernardo - Fernando</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/templatemo-scholar.css">
+    <link rel="stylesheet" href="assets/css/owl.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet"href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+<!--
+
+TemplateMo 586 Scholar
+
+https://templatemo.com/tm-586-scholar
+
+-->
+  </head>
+
+<body>
+
+  <!-- ***** Preloader Start ***** -->
+  <div id="js-preloader" class="js-preloader">
+    <div class="preloader-inner">
+      <span class="dot"></span>
+      <div class="dots">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </div>
+  <!-- ***** Preloader End ***** -->
+
+  <!-- ***** Header Area Start ***** -->
+  <header class="header-area header-sticky">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <nav class="main-nav">
+                    <!-- ***** Logo Start ***** -->
+                    <a href="index.html" class="logo">
+                        <h1>Laboratorio de Redes Digitales de Datos</h1>
+                    </a>
+                    <!-- ***** Logo End ***** -->
+                  
+                    <!-- ***** Menu Start ***** -->
+                    <ul class="nav">
+                      <li class="scroll-to-section"><a href="index.html" class="active">Regresar a las prácticas</a></li>
+                      
+                  </ul>   
+                    <a class='menu-trigger'>
+                        <span>Menu</span>
+                    </a>
+                    <!-- ***** Menu End ***** -->
+                </nav>
+            </div>
+        </div>
+    </div>
+  </header>
+  <!-- ***** Header Area End ***** -->
+
+  <div class="main-banner" id="inicio">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="owl-carousel owl-banner">
+            <div class="">
+              <div class="header-text">
+                <div class="col-lg-12 text-center">
+                  <h1 class="mt-5 text-white">Práctica 4: “Backend y Frontend - PHP”  </h1>
+                  <p class="text-white mt-3">Integrantes: Bernardo Bojalil Lorenzini, Fernando Agustín Hernández Rivas</p>
+                  <p class="text-white">Fecha: 28/02/2025</p>
+                  <p class="text-white">Segundo parcial</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section id="contenido" class="container mt-5">
+    <div class="row">
+        <div class="row justify-content-center">
+            <h2 class="mt-5 mb-5">Resumen</h2>
+            <p>En esta práctica, se implementará un sistema de adquisición y visualización de datos mediante distintos sensores conectados a una plataforma en línea. Se utilizarán un sensor digital (botón), un sensor analógico (potenciómetro), un sensor inteligente (DHT22) para medición de temperatura y humedad, y un sensor PIR para detección de movimiento. Los datos obtenidos serán enviados a Replit (solamente para pruebas, al final se desplegará en Render), donde se visualizarán en un dashboard desarrollado con HTML, CSS y PHP. Este sistema permitirá monitorear en tiempo real las mediciones de los sensores, proporcionando una interfaz gráfica accesible a través de la web.</p>
+
+            <h2 class="mt-5 mb-5">Introducción</h2>
+            <p>En el desarrollo web, los términos frontend y backend se refieren a las dos principales áreas que conforman una aplicación o sitio web. El frontend, o desarrollo del lado del cliente, abarca todo lo que los usuarios ven e interactúan directamente en sus navegadores. Esto incluye el diseño visual, la estructura y el comportamiento dinámico de la interfaz de usuario. Para lograrlo, se utilizan tecnologías como HTML (HyperText Markup Language), que define la estructura y el contenido de una página web; CSS (Cascading Style Sheets), que controla la presentación y el diseño visual de los elementos; y JavaScript, que añade interactividad y comportamiento dinámico a la interfaz.
+
+              Por otro lado, el backend, o desarrollo del lado del servidor, se encarga de la lógica interna, el manejo de bases de datos y la gestión de las solicitudes que provienen del frontend. Es responsable de procesar la información, realizar cálculos y enviar respuestas adecuadas al cliente. Uno de los lenguajes de programación más utilizados en el backend es PHP (Hypertext Preprocessor), el cual permite crear contenido dinámico y conectarse con bases de datos para gestionar información de manera eficiente.
+              
+              Para esta práctica, utilizamos Replit, una plataforma en línea que funciona como un entorno de desarrollo integrado (IDE) basado en la nube. Replit permite a los desarrolladores escribir, ejecutar y colaborar en código directamente desde el navegador, sin necesidad de instalar software adicional. Además, ofrece herramientas para la edición en tiempo real entre múltiples usuarios y soporte para una amplia variedad de lenguajes de programación, facilitando la implementación de proyectos colaborativos.
+              
+              El trabajo se realizó en conjunto con otro equipo. Nuestro equipo se encargó del sensor digital (botón) y del sensor PIR (detección de movimiento), mientras que el otro equipo trabajó con el sensor inteligente DHT22 (temperatura y humedad) y el sensor analógico (potenciómetro). Ambos equipos enviaron los datos a un mismo dashboard desarrollado en Replit con HTML, CSS y PHP, permitiendo una integración completa de la información en una única interfaz gráfica en tiempo real. Finalmente, la aplicación web fue desplegada en Render, una plataforma de infraestructura como servicio (IaaS) que facilita la implementación y despliegue de aplicaciones web y backend de manera rápida y sin complicaciones. Render ofrece servicios como hosting para aplicaciones web, bases de datos, y almacenamiento, lo que permite a los desarrolladores centrarse más en la creación del producto sin preocuparse por la administración del servidor.</p>
+
+            <h2 class="mt-5 mb-5">Material y Equipos</h2>
+            
+          <div class="container">
+            <div class="row justify-content-center"> 
+              <div class="col-lg-3 col-md-6 mb-4">
+                <div class="custom-card text-center">
+                  <div class="card-body">
+                    <img src="https://m.media-amazon.com/images/I/612eALAbpgL.jpg" alt="" class="img-fluid rounded-circle mb-3" style="width: 120px; height: 120px; object-fit: cover;">
+                    <h4>ESP32</h4>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="col-lg-3 col-md-6 mb-4">
+                <div class="custom-card text-center">
+                  <div class="card-body">
+                    <img src="https://tresdprinttech.com/wp-content/uploads/2024/02/PRB002.jpg" alt="" class="img-fluid rounded-circle mb-3" style="width: 120px; height: 120px; object-fit: cover;">
+                    <h4>2 Protoboards</h4>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-md-6 mb-4">
+                <div class="custom-card text-center">
+                  <div class="card-body">
+                    <img src="https://www.steren.com.mx/media/catalog/product/cache/295a12aacdcb0329a521cbf9876b29e7/image/1709082e0/led-de-5-mm-color-rojo-claro.jpg" alt="" class="img-fluid rounded-circle mb-3" style="width: 120px; height: 120px; object-fit: cover;">
+                    <h4>1 LED</h4>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-md-6 mb-4">
+                <div class="custom-card text-center">
+                  <div class="card-body">
+                    <img src="https://zenerbyte.com/wp-content/uploads/2023/01/Push-button-4-pines.jpg" alt="" class="img-fluid rounded-circle mb-3" style="width: 120px; height: 120px; object-fit: cover;">
+                    <h4>1 Botón</h4>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-md-6 mb-4">
+                <div class="custom-card text-center">
+                  <div class="card-body">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhXxIj0PLmngFeBFfF0aZEjqhKooLu7UfqAQ&s" alt="" class="img-fluid rounded-circle mb-3" style="width: 120px; height: 120px; object-fit: cover;">
+                    <h4>1 Potenciómetro 5k</h4>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-md-6 mb-4">
+                <div class="custom-card text-center">
+                  <div class="card-body">
+                    <img src="https://www.geekfactory.mx/wp-content/uploads/2014/04/dht22-sensor-de-temperatura-y-humedad-relativa.jpg" alt="" class="img-fluid rounded-circle mb-3" style="width: 120px; height: 120px; object-fit: cover;">
+                    <h4>1 Sensor DHT22</h4>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-6 mb-4">
+                <div class="custom-card text-center">
+                  <div class="card-body">
+                    <img src="https://www.steren.com.mx/media/catalog/product/cache/0236bbabe616ddcff749ccbc14f38bf2/image/19454216b/sensor-de-movimiento-pir.jpg" alt="" class="img-fluid rounded-circle mb-3" style="width: 120px; height: 120px; object-fit: cover;">
+                    <h4>1 Sensor PIR</h4>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-md-6 mb-4">
+                <div class="custom-card text-center">
+                  <div class="card-body">
+                    <img src="https://silicio.mx/media/catalog/product/cache/1/image/650x650/5e06319eda06f020e43594a9c230972d/c/a/cab110c4m/Cables-Jumper-para-Protoboard---(200mm_165mm_125mm_80mm)-31.jpg" alt="" class="img-fluid rounded-circle mb-3" style="width: 120px; height: 120px; object-fit: cover;">
+                    <h4>+10 jumpers macho-macho y hembra-macho</h4>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-md-6 mb-4">
+                <div class="custom-card text-center">
+                  <div class="card-body">
+                    <img src="https://http2.mlstatic.com/D_NQ_NP_839639-MLM41892100257_052020-O.webp">
+                    <h4>Resistencias 220Ω y 1kΩ </h4>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-md-6 mb-4">
+                <div class="custom-card text-center">
+                  <div class="card-body">
+                    <img src="https://m.media-amazon.com/images/I/71QGa1J+egL.jpg">
+                    <h4>1 cable micro USB a USB A </h4>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-md-6 mb-4">
+                <div class="custom-card text-center">
+                  <div class="card-body">
+                    <img src="https://intercompras.com/images/product/HUAWEI_53011XKM.jpg">
+                    <h4>Laptop</h4>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-md-6 mb-4">
+                <div class="custom-card text-center">
+                  <div class="card-body">
+                    <img src="https://images.vexels.com/media/users/3/132687/isolated/preview/0207a74a86c5255a9d6458e587f1e9e4-icono-de-wifi-plana.png?w=360">
+                    <h4>Acceso a WiFi</h4>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-md-6 mb-4">
+                <div class="custom-card text-center">
+                  <div class="card-body">
+                    <img src="https://cdn.sparkfun.com/assets/home_page_posts/6/8/0/8/CollectAgriculturalDataOverTheThingsNetworkTSExample_11.png">
+                    <h4>Plataforma Thingspeak</h4>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-md-6 mb-4">
+                <div class="custom-card text-center">
+                  <div class="card-body">
+                    <img src="https://cdn.freelogovectors.net/svg18/replit_logo-freelogovectors.net.svg">
+                    <h4>Plataforma Replit</h4>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-md-6 mb-4">
+                <div class="custom-card text-center">
+                  <div class="card-body">
+                    <img src="https://pbs.twimg.com/profile_images/1735429515541938176/zOO1N7Su_400x400.jpg">
+                    <h4>Plataforma Render</h4>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+
+          
+
+          <h2 class="mt-20 mb-5" style="margin-top: 30px;">Desarrollo</h2>
+
+
+<!-- Contenedor principal -->
+<div class="container">
+  <div class="row">
+    <!-- Card 1 -->
+    <div class="col-lg-12 mb-4">
+      <div class="card p-4">
+        <h5 class="card-title">Ejercicio 1: Desarrollar un programa de encendido de un LED con un botón y PIR. Envío de datos a backend y frontend. </h5>
+        <p class="card-text" style="font-size: 14px; color: #555;">
+          En este ejercicio, el ESP32 fue configurado para capturar datos de un botón y un sensor PIR, los cuales estaban conectados a pines específicos del microcontrolador. El botón fue conectado al pin GPIO 33, mientras que su LED indicador se conectó al GPIO 32. Por otro lado, el sensor PIR se conectó al GPIO 13, y su LED indicador al GPIO 12. Estos componentes fueron monitoreados constantemente y sus estados fueron enviados a un servidor PHP mediante solicitudes HTTP GET.
+          El servidor, mediante un script en PHP, procesó los datos recibidos y los almacenó en un archivo datos.txt, asegurando que se mantuviera el estado más reciente del botón y del sensor PIR. La comunicación con el servidor se realizó a través de una conexión WiFi establecida con el ESP32, utilizando las credenciales de la red. Además, se implementó una opción para que los datos pudieran consultarse en formato JSON, facilitando su integración con una interfaz web que los mostraba en un dashboard en tiempo real.
+        </p>
+      </div>
+    </div>
+
+    <div class="col-lg-12 mb-4">
+      <div class="card p-4">
+        <h5 class="card-title">Ejercicio 2: Desarrollar un programa de encendido de un LED con un potenciómetro y un sendor DHT22. Envío de datos a backend y frontend. </h5>
+        <p class="card-text" style="font-size: 14px; color: #555;">
+          En este ejercicio, de manera similar al Ejercicio 1, el ESP32 fue configurado para capturar datos de un sensor de temperatura y humedad DHT22 y un potenciómetro. El ESP32 monitoreó estos sensores y envió los datos obtenidos a un servidor PHP mediante solicitudes HTTP GET. El servidor, mediante un script en PHP, procesó la información recibida y la almacenó en un archivo datos.txt. 
+          <a href="https://redes-portafolio.vercel.app/practica4/" target="_blank" style="text-decoration: none; color: #007bff;">(Realizado por equipo anexo. Haga clic para navegar al portafolio)</a>
+        </p>
+        
+      </div>
+    </div>
+
+    
+</div>
+          
+
+<h2 class="mt-20 mb-5" style="margin-top: 30px;">Simulación</h2>
+
+
+<div class="col-12 mb-4">
+  <div class="card p-4 text-center">
+    <h3 class="card-title mb-3">Ejercicio 1</h3>
+    
+    <h5 class="mb-2">Video</h5>
+    <video width="100%" height="350" controls>
+      <source src="assets/images/P4-E1.mp4" type="video/mp4">
+      Tu navegador no soporta la reproducción de video.
+    </video>
+    
+    <h5 class="mt-4 mb-2">Simulación y Datos</h5>
+    <div class="row">
+      <div class="col-12 text-center mb-4">
+        <h6 class="mb-3">Simulación Wokwi</h6>
+        <iframe src="https://wokwi.com/projects/423971051164252161" 
+                width="100%" 
+                height="500" 
+                frameborder="0" 
+                allowfullscreen>
+        </iframe>
+      </div>
+      <div class="col-12 text-center">
+        <h6 class="mb-3">Dashboard</h6>
+        <iframe width="100%" height="900" style="border: 1px solid #cccccc; border-radius: 10px;" 
+                src="https://dashboardberny.onrender.com/index.html">
+        </iframe>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+<h2 class="mt-5 mb-5">Diseño (En la práctica solo se diseñó la parte correspondiente a dos de los sensores. La otra parte fue desarrollada por otro equipo)</h2>
+            <p>El circuito consta de un ESP32 que se encarga de leer los valores de un botón y un sensor de movimiento PIR para luego enviarlos a un servidor mediante una conexión WiFi. El botón está conectado al pin GPIO 33 del ESP32, mientras que un LED indicador asociado al botón está en el pin GPIO 32. El sensor PIR está conectado al pin GPIO 13, y su LED indicador se encuentra en el pin GPIO 12. El ESP32 se conecta a una red WiFi configurada previamente para transmitir los datos de ambos sensores a un servidor PHP.
+
+              El código en el ESP32 inicia estableciendo la conexión WiFi y configurando los pines del botón y el sensor PIR como entradas, mientras que los pines de los LEDs se configuran como salidas. En el bucle principal, el ESP32 monitorea el estado del botón y del sensor PIR. Si el botón es presionado, se enciende su LED indicador y se envía un valor de 1 al servidor; en caso contrario, se envía un 0. De manera similar, si el sensor PIR detecta movimiento, su LED se enciende y el ESP32 envía un valor de 1; si no detecta movimiento, envía un 0.
+              
+            
+              <figure style="text-align: center; margin: 20px auto; width: 100%;">
+                <img src="assets/images/Añadir un poco de texto (1).jpg" alt="Descripción de la imagen" style="width: 100%;">
+                <figcaption style="font-size: 14px; color: gray; margin-top: 5px;">
+                    Estructura de código para acceso a la red y envío de datos.
+                </figcaption>
+            </figure>
+
+            <p>El servidor PHP juega un papel fundamental en la práctica, ya que recibe, almacena y proporciona acceso a los datos enviados por el ESP32. La comunicación entre el ESP32 y el servidor se realiza mediante solicitudes HTTP GET, donde los valores de los sensores (botón y PIR) son enviados como parámetros en la URL. Para gestionar estos datos, el servidor PHP opera en tres funciones clave: recibir y registrar los valores enviados, almacenarlos en un archivo de texto (datos.txt) y proporcionar acceso a los datos en diferentes formatos, incluyendo JSON para su integración en interfaces web.
+
+              Cuando el ESP32 envía datos, el servidor primero verifica si los parámetros DATO (estado del botón) o MOVIMIENTO (estado del sensor PIR) están presentes en la solicitud. Si se recibe un nuevo valor para alguno de estos sensores, el script PHP actualiza el archivo datos.txt, asegurando que siempre se mantengan los valores más recientes. Para evitar pérdida de información, el código separa los datos con una coma, permitiendo modificar solo el valor necesario sin alterar el otro.
+              
+              Además del almacenamiento, el servidor ofrece múltiples formas de acceder a la información. Si se recibe una solicitud con el parámetro json, PHP responde con un objeto JSON que contiene los estados actuales del botón y del sensor PIR. Esto permite que aplicaciones web o dashboards consuman los datos fácilmente. En caso de no solicitar JSON, PHP responde con un mensaje de texto simple que muestra los valores actuales de los sensores.
+              
+              Para depuración, el código PHP registra todas las solicitudes y eventos importantes en un archivo de registro (debug.log). Esto permite analizar el funcionamiento del sistema y detectar posibles errores en la comunicación entre el ESP32 y el servidor.</p>
+            
+              <figure style="text-align: center; margin: 20px auto; width: 100%;">
+                <img src="assets/images/Añadir un poco de texto (2).jpg" alt="Descripción de la imagen" style="width: 100%;">
+                <figcaption style="font-size: 14px; color: gray; margin-top: 5px;">
+                    Estructura de código para lectura de datos en servidor.
+                </figcaption>
+            </figure>
+            
+
+   
+
+
+<h2 class="mt-20 mb-5" style="margin-top: 40px;">Construcción del Circuito</h2>
+
+
+<!-- Contenedor principal -->
+<div class="container">
+  <div class="row justify-content-center">
+    <!-- Card 1 -->
+    <div class="col-md-12 mb-4">
+      <div class="card p-4 shadow-lg rounded-lg">
+        <h4 class="card-title mb-4">Ejercicio 1: Sensores digitales (botón y PIR) y envío de datos por internet.</h4>
+        <div class="row align-items-center">
+          <!-- Video -->
+          <div class="col-md-6">
+            <video class="video-box rounded-lg" controls>
+              <source src="assets/images/P4-V1.mp4" type="video/mp4">
+              Tu navegador no soporta la reproducción de video.
+            </video>
+          </div>
+          <!-- Código con slider vertical -->
+          <div class="col-md-6 position-relative">
+            <button class="copy-btn" onclick="copyCode('code1')">Copiar el código al portapapeles</button>
+            <div class="code-container rounded-lg">
+              <pre class="code-box"><code id="code1">
+#include WiFi.h
+#include HTTPClient.h
+
+// Puertos GPIO
+int boton = 33;
+int ledBoton = 32;
+int pirSensor = 13; // PIR en pin 13
+int ledPir = 12;     // LED del PIR en pin 12
+
+// Variables status
+int status_boton = 0;
+int pirState = LOW;
+int val = 0;
+
+// Servidor PHP
+String serverUrl = "https://dashboardberny.onrender.com/process.php";
+String sensorBoton = "DATO";
+String sensorPir = "MOVIMIENTO";
+
+// Credenciales WiFi
+const char* ssid = "Wokwi-GUEST";
+const char* password = "";
+
+void setup() {
+    // Configuración de pines
+    pinMode(ledBoton, OUTPUT);
+    pinMode(boton, INPUT);
+    pinMode(ledPir, OUTPUT);
+    pinMode(pirSensor, INPUT);
+    
+    Serial.begin(115200);
+    Serial.println("Iniciando...");
+    delay(1000);
+    
+    // Conectar a la red WiFi
+    WiFi.begin(ssid, password);
+    
+    // Esperar conexión WiFi
+    Serial.print("Conectando a WiFi");
+    int attempts = 0;
+    while (WiFi.status() != WL_CONNECTED && attempts < 20) {
+        delay(500);
+        Serial.print(".");
+        attempts++;
+    }
+    
+    if (WiFi.status() == WL_CONNECTED) {
+        Serial.println("\nWiFi conectado");
+        Serial.print("Dirección IP: ");
+        Serial.println(WiFi.localIP());
+    } else {
+        Serial.println("\nError al conectar al WiFi. Reiniciando...");
+        ESP.restart();
+    }
+}
+
+void loop() {
+    // Verificar si la conexión WiFi sigue activa
+    if (WiFi.status() != WL_CONNECTED) {
+        Serial.println("Conexión WiFi perdida. Reconectando...");
+        WiFi.begin(ssid, password);
+        
+        int attempts = 0;
+        while (WiFi.status() != WL_CONNECTED && attempts < 10) {
+            delay(500);
+            Serial.print(".");
+            attempts++;
+        }
+        
+        if (WiFi.status() != WL_CONNECTED) {
+            Serial.println("Fallo al reconectar. Esperando antes del siguiente intento...");
+            delay(5000);
+            return;
+        }
+    }
+    
+    // Leer estado del botón
+    status_boton = digitalRead(boton);
+    if (status_boton == 1) {
+        digitalWrite(ledBoton, HIGH);
+        Serial.println("Botón presionado");
+    } else {
+        digitalWrite(ledBoton, LOW);
+    }
+    
+    // Leer estado del sensor PIR
+    val = digitalRead(pirSensor);
+    if (val == HIGH) {
+        digitalWrite(ledPir, HIGH);
+        if (pirState == LOW) {
+            Serial.println("¡Movimiento detectado!");
+            pirState = HIGH;
+        }
+    } else {
+        digitalWrite(ledPir, LOW);
+        if (pirState == HIGH) {
+            Serial.println("Movimiento finalizado");
+            pirState = LOW;
+        }
+    }
+    
+    // Enviar datos al servidor
+    sendSensorData(sensorBoton, status_boton);
+    delay(500); // Pequeña pausa entre peticiones
+    sendSensorData(sensorPir, val);
+    
+    delay(3000); 
+}
+
+// Función para enviar datos al servidor
+void sendSensorData(String sensorType, int value) {
+    HTTPClient http;
+    
+    // Crear URL para la petición con el formato correcto
+    String url = serverUrl + "?" + sensorType + "=" + String(value);
+    
+    Serial.print("Enviando a URL: ");
+    Serial.println(url);
+    
+    // Iniciar conexión
+    http.begin(url);
+    
+    // Agregar encabezados para asegurar compatibilidad
+    http.addHeader("Content-Type", "application/x-www-form-urlencoded");
+    
+    // Realizar la petición GET
+    int httpResponseCode = http.GET();
+    
+    if (httpResponseCode > 0) {
+        Serial.print("Código HTTP: ");
+        Serial.println(httpResponseCode);
+        
+        String response = http.getString();
+        Serial.println("Respuesta del servidor:");
+        Serial.println(response);
+    } else {
+        Serial.print("Error en la petición HTTP: ");
+        Serial.println(httpResponseCode);
+    }
+    
+    // Liberar recursos
+    http.end();
+}
+              </code></pre>
+    
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 1 -->
+    <div class="col-md-12 mb-4">
+      <div class="card p-4 shadow-lg rounded-lg">
+        <h4 class="card-title mb-4">Ejercicio 2: Sensor analógico (potenciómetro) y sensor inteligente (DHT22) y envío de datos por internet.</h4>
+        <div class="row align-items-center">
+          <!-- Video -->
+          <div class="col-md-6">
+            <video class="video-box rounded-lg" controls>
+              <source src="assets/images/P4-V2.mp4" type="video/mp4">
+              Tu navegador no soporta la reproducción de video.
+            </video>
+          </div>
+          <!-- Código con slider vertical -->
+          <div class="col-md-6 position-relative">
+            <button class="copy-btn" onclick="copyCode('code1')">Copiar el código al portapapeles</button>
+            <div class="code-container rounded-lg">
+              <pre class="code-box"><code id="code1">
+#include DHT.h
+#include WiFi.h
+#include HTTPClient.h
+
+DHT dht(32,DHT22);
+
+int pot = 35;
+int led = 33;
+
+int pot_value = 0;
+
+int temp_value = 0;
+int hum_value = 0;
+
+String url = "https://api.thingspeak.com/update?";
+String api_key = "C67USPYMQ8J5YAMO";
+String sensor = "field1";
+
+String serverUrl = "https://41d8c683-4229-488b-8729-bb421e1ac4bf-00-7vii4pqkpfif.janeway.replit.dev/process.php";
+String sensorTemperatura = "TEMPERATURA";
+
+
+void setup(){
+  pinMode(led, OUTPUT);
+
+  dht.begin();
+  Serial.begin(115200);
+
+  WiFi.begin("ALFREDOMACHINE", "35|f916Y");
+  while (WiFi.status() != WL_CONNECTED) {
+    delay(500);
+    Serial.print(".");
+  }
+  Serial.println("WiFi connected");
+
+}
+
+void loop(){
+  pot_value = analogRead(pot);
+  Serial.println(pot_value);
+  
+  temp_value = dht.readTemperature();
+  hum_value = dht.readHumidity();
+
+  Serial.print("Temperatura: ");
+  Serial.println(temp_value);
+  Serial.print("Humedad: ");
+  Serial.println(hum_value);
+
+
+  if (pot_value <= 2048){
+    digitalWrite(led, HIGH);
+  }
+  else{
+    digitalWrite(led, LOW);
+  }
+
+  if (WiFi.status() == WL_CONNECTED) {
+    HTTPClient http;
+    String message = url + "api_key=" + api_key + "&" + sensor + "=" + String(pot_value);
+    
+    http.begin(message);
+    int httpCode = http.GET();
+    
+    Serial.println(message);
+    Serial.print("HTTP Response Code: ");
+    Serial.println(httpCode);
+    
+    http.end();
+  }
+
+  sendSensorData(sensorTemperatura, temp_value);
+
+  delay (3000);
+}
+
+
+
+// Función para enviar datos al servidor
+void sendSensorData(String sensorType, int value) {
+    HTTPClient http;
+    
+    // Crear URL para la petición con el formato correcto
+    String url = serverUrl + "?" + sensorType + "=" + String(value);
+    
+    Serial.print("Enviando a URL: ");
+    Serial.println(url);
+    
+    // Iniciar conexión
+    http.begin(url);
+    
+    // Agregar encabezados para asegurar compatibilidad
+    http.addHeader("Content-Type", "application/x-www-form-urlencoded");
+    
+    // Realizar la petición GET
+    int httpResponseCode = http.GET();
+    
+    if (httpResponseCode > 0) {
+        Serial.print("Código HTTP: ");
+        Serial.println(httpResponseCode);
+        
+        String response = http.getString();
+        Serial.println("Respuesta del servidor:");
+        Serial.println(response);
+    } else {
+        Serial.print("Error en la petición HTTP: ");
+        Serial.println(httpResponseCode);
+    }
+    
+    // Liberar recursos
+    http.end();
+}                
+              </code></pre>
+    
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+    </div>
+
+
+    <h2 class="mt-5 mb-5">Resultados</h2>
+    <p> Los resultados de la práctica fueron exitosos, cumpliendo con los objetivos establecidos desde el inicio. Ambos equipos lograron integrar correctamente sus respectivos sensores y enviar los datos al backend en Replit. Nuestro equipo fue responsable del botón y el sensor PIR, mientras que el otro equipo manejó el potenciómetro y el sensor de temperatura DHT22. Todos los sensores enviaron su información al servidor PHP, que almacenó y distribuyó los valores en tiempo real para su visualización en el dashboard web.
+
+      Uno de los aspectos más destacados de la práctica fue la eficiencia de la comunicación mediante un backend propio en comparación con plataformas como ThingSpeak. A diferencia de ThingSpeak, que introduce cierto retraso en la actualización de datos debido a sus restricciones de tiempo entre envíos, nuestro servidor PHP permitió una respuesta casi inmediata.
+    <h2 class="mt-5 mb-5">Conclusiones</h2>
+    <p>La práctica demostró la importancia de una comunicación eficiente entre dispositivos IoT y un servidor backend. Implementar un sistema propio con PHP permitió una respuesta más rápida en comparación con plataformas como ThingSpeak, optimizando la visualización y el procesamiento de datos en tiempo real. Esto resalta la ventaja de utilizar servidores personalizados cuando se requiere baja latencia y mayor control sobre los datos. La práctica también reforzó el uso de tecnologías web como HTML, CSS y PHP para la creación de interfaces dinámicas, permitiendo visualizar la información de manera gráfica.</p>
+
+              <h2 class="mt-5 mb-5">Refrencias</h2>
+              <ul>
+                <li><a href="https://www.juanjobeunza.com/esp32-wifi/" target="_blank">Beunza, J. (2020, 25 junio). ESP32 conexión via WiFi.</a></li>
+                <li><a href="https://www.electronicwings.com/esp32/esp32-wi-fi-basics-getting-started" target="_blank">ESP32 Wi-Fi Basics Getting started | ESP32. (s. f.). © 2018 ElectronicWings.</a></li>
+                <li><a href="https://docs.wokwi.com/guides/esp32-wifi" target="_blank">ESP32 WiFi Networking | Wokwi Docs. (s. f.).</a></li>
+                <li><a href="https://randomnerdtutorials.com/esp32-http-get-post-arduino/?utm_source=chatgpt.com" target="_blank">Santos, R., & Santos, R. (2022, 27 octubre). ESP32 HTTP GET and HTTP POST with Arduino IDE | Random Nerd Tutorials.</a></li>
+                <li>
+                  <a href="http://kio4.com/arduino/116_Wemos_Cliente_PHP.htm" target="_blank">
+                      Wemos D1 R32 ESP32. Cliente de un servidor web envío de datos. PHP. (s. f.).
+                  </a>
+              </li>
+              <li>
+                  <a href="https://pablocianes.com/php-html-css-js/" target="_blank">
+                      PHP y sus amigos HTML, CSS y JS. (s. f.). Programador Web Pablo Cianes.
+                  </a>
+              </li>
+            </ul>
+            
+            
+              <div></div>
+              <div></div>
+                        
+  </div>
+</div>
+<h2 class="mt-5 mb-5">Descargables</h2>
+<div> 
+  <a href="assets/Files/Practica4_BernardoFernando.zip" download class="btn download-btn">Descargar ZIP del Dashboard Web con HTML, CSS, JS y PHP</a>
+</div>
+
+
+<!-- Script para copiar el código -->
+<script>
+function copyCode(id) {
+  var code = document.getElementById(id).innerText;
+  navigator.clipboard.writeText(code).then(() => {
+    alert("Código copiado al portapapeles!");
+  });
+}
+</script>
+
+
+
+
+</section>
+
+<footer>
+  <div class="container">
+    <div class="col-lg-30">
+      <p>Copyright © 2036 Scholar Organization. All rights reserved. &nbsp;&nbsp;&nbsp; Design: <a href="https://templatemo.com" rel="nofollow" target="_blank">TemplateMo</a></p>
+    </div>
+  </div>
+</footer>
+
+<!-- Scripts -->
+<!-- Bootstrap core JavaScript -->
+<script src="vendor/jquery/jquery.min.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<script src="assets/js/isotope.min.js"></script>
+<script src="assets/js/owl-carousel.js"></script>
+<script src="assets/js/counter.js"></script>
+<script src="assets/js/custom.js"></script>
+
+
+
+
+</body>
+
+</script>
+
+</html>
