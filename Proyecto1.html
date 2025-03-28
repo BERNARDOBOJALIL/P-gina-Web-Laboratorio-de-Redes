@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <script>
+      window.addEventListener('load', function() {
+        setTimeout(() => {
+          window.scrollTo(0, 0);
+        }, 200); // Espera unos milisegundos y luego desplaza al inicio
+      });
+    </script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <title>Portafolio Bernardo - Fernando</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/templatemo-scholar.css">
+    <link rel="stylesheet" href="assets/css/owl.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet"href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+<!--
+
+TemplateMo 586 Scholar
+
+https://templatemo.com/tm-586-scholar
+
+-->
+  </head>
+
+<body>
+
+  <!-- ***** Preloader Start ***** -->
+  <div id="js-preloader" class="js-preloader">
+    <div class="preloader-inner">
+      <span class="dot"></span>
+      <div class="dots">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </div>
+  <!-- ***** Preloader End ***** -->
+
+  <!-- ***** Header Area Start ***** -->
+  <header class="header-area header-sticky">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <nav class="main-nav">
+                    <!-- ***** Logo Start ***** -->
+                    <a href="index.html" class="logo">
+                        <h1>Laboratorio de Redes Digitales de Datos</h1>
+                    </a>
+                    <!-- ***** Logo End ***** -->
+                  
+                    <!-- ***** Menu Start ***** -->
+                    <ul class="nav">
+                      <li class="scroll-to-section"><a href="index.html" class="active">Regresar a las prácticas</a></li>
+                      
+                  </ul>   
+                    <a class='menu-trigger'>
+                        <span>Menu</span>
+                    </a>
+                    <!-- ***** Menu End ***** -->
+                </nav>
+            </div>
+        </div>
+    </div>
+  </header>
+  <!-- ***** Header Area End ***** -->
+
+  <div class="main-banner" id="inicio">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="owl-carousel owl-banner">
+            <div class="">
+              <div class="header-text">
+                <div class="col-lg-12 text-center">
+                  <h1 class="mt-5 text-white">Proyecto 1: “Monitoreo de sonido, temperatura y humedad”  </h1>
+                  <p class="text-white mt-3">Integrantes: Bernardo Bojalil Lorenzini, Fernando Agustín Hernández Rivas, Alfredo Barranco Ahued, David Bojalil Abiti</p>
+                  <p class="text-white">Fecha: 27/03/2025</p>
+                  <p class="text-white">Segundo parcial</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section id="contenido" class="container mt-5">
+    <div class="row">
+        <div class="row justify-content-center">
+            <h2 class="mt-5 mb-5">Resumen</h2>
+            <p>En la práctica, se implementó un sistema de monitoreo ambiental utilizando un sensor DHT22 para medir temperatura y humedad, junto con un sensor analógico OKY3137 para registrar niveles de sonido y convertirlos a decibeles. El objetivo fue identificar y alertar sobre condiciones poco saludables en ciertos puntos de la universidad, permitiendo evaluar el impacto del ruido y las condiciones ambientales en el entorno académico.</p>
+
+            <h2 class="mt-5 mb-5">Introducción</h2>
+            <p>La contaminación acústica es un problema creciente en entornos urbanos y académicos, afectando tanto la salud como el rendimiento de las personas. Según la Organización Mundial de la Salud (OMS), la exposición prolongada a niveles de ruido superiores a 70 decibeles puede provocar pérdida de audición, aumento del estrés, trastornos del sueño y dificultades en la concentración y el aprendizaje. En el contexto universitario, donde el ruido proviene de diversas fuentes como el tráfico, la construcción, actividades recreativas y la propia dinámica del campus, su impacto puede ser significativo, especialmente en espacios diseñados para el estudio y la investigación.
+
+              Además del ruido, otros factores ambientales como la temperatura y la humedad también juegan un papel crucial en la calidad de vida dentro del campus. Temperaturas extremas o niveles de humedad inadecuados pueden generar incomodidad, afectar la eficiencia energética de los edificios e incluso influir en la propagación de enfermedades respiratorias. En este sentido, contar con un sistema que permita monitorear estos parámetros en tiempo real facilita la toma de decisiones para mejorar las condiciones ambientales y garantizar un espacio óptimo para la comunidad universitaria.
+              
+              Con el objetivo de contribuir a la transformación del campus en un entorno más inteligente y sostenible, se ha desarrollado un sistema de monitoreo ambiental basado en sensores que miden el nivel de ruido, la temperatura y la humedad en puntos estratégicos de la universidad. Este sistema utiliza un sensor analógico de sonido OKY3137, que permite convertir las mediciones en decibeles, junto con un sensor DHT22 para la recolección de datos climáticos. La información obtenida no solo permite alertar sobre condiciones poco saludables, sino que también sirve como base para la implementación de estrategias que reduzcan la contaminación acústica y optimicen el confort térmico en el campus.</p>
+
+            <h2 class="mt-5 mb-5">Material y Equipos</h2>
+            
+          <div class="container">
+            <div class="row justify-content-center"> 
+              <div class="col-lg-3 col-md-6 mb-4">
+                <div class="custom-card text-center">
+                  <div class="card-body">
+                    <img src="https://m.media-amazon.com/images/I/612eALAbpgL.jpg" alt="" class="img-fluid rounded-circle mb-3" style="width: 120px; height: 120px; object-fit: cover;">
+                    <h4>4 ESP32</h4>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="col-lg-3 col-md-6 mb-4">
+                <div class="custom-card text-center">
+                  <div class="card-body">
+                    <img src="https://tresdprinttech.com/wp-content/uploads/2024/02/PRB002.jpg" alt="" class="img-fluid rounded-circle mb-3" style="width: 120px; height: 120px; object-fit: cover;">
+                    <h4>4 Protoboards</h4>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-md-6 mb-4">
+                <div class="custom-card text-center">
+                  <div class="card-body">
+                    <img src="https://www.steren.com.mx/media/catalog/product/cache/295a12aacdcb0329a521cbf9876b29e7/image/1709082e0/led-de-5-mm-color-rojo-claro.jpg" alt="" class="img-fluid rounded-circle mb-3" style="width: 120px; height: 120px; object-fit: cover;">
+                    <h4>4 LED's</h4>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-md-6 mb-4">
+                <div class="custom-card text-center">
+                  <div class="card-body">
+                    <img src="https://www.okystar.com/wp-content/uploads/2020/10/OKY3137-3.png" alt="" class="img-fluid rounded-circle mb-3" style="width: 120px; height: 120px; object-fit: cover;">
+                    <h4>4 Sensores OKY3137</h4>
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="col-lg-3 col-md-6 mb-4">
+                <div class="custom-card text-center">
+                  <div class="card-body">
+                    <img src="https://www.geekfactory.mx/wp-content/uploads/2014/04/dht22-sensor-de-temperatura-y-humedad-relativa.jpg" alt="" class="img-fluid rounded-circle mb-3" style="width: 120px; height: 120px; object-fit: cover;">
+                    <h4>4 Sensores DHT22</h4>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-md-6 mb-4">
+                <div class="custom-card text-center">
+                  <div class="card-body">
+                    <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcS10Id_VpgGTTbkMkQXycesJEkrRyhwJhNO_b5Ar1cZZad4-M_76AYg4kf44yBucoBDkpXwxhoDfJEOZEiJqwnVvvcWMj7eOYx2YVSfanv1ExF3q_IdiHDFrA&usqp=CAE">
+                    <h4>+30 cables para protoboard cortados</h4>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-md-6 mb-4">
+                <div class="custom-card text-center">
+                  <div class="card-body">
+                    <img src="https://http2.mlstatic.com/D_NQ_NP_839639-MLM41892100257_052020-O.webp">
+                    <h4>4 Resistencias 220Ω </h4>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-md-6 mb-4">
+                <div class="custom-card text-center">
+                  <div class="card-body">
+                    <img src="https://m.media-amazon.com/images/I/71QGa1J+egL.jpg">
+                    <h4>4 cables micro USB a USB A </h4>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-md-6 mb-4">
+                <div class="custom-card text-center">
+                  <div class="card-body">
+                    <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcTkKOkNZVNXHTFqMtmJr-N8Jun4Lvm82gAzxNUMq-8C8bJcfFFR-FN6FBJCHElEGU7rahcleLi4Ki0P0mqIhWPxECq1NA-Stw&usqp=CAE">
+                    <h4>4 cargadores USB 5V</h4>
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="col-lg-3 col-md-6 mb-4">
+                <div class="custom-card text-center">
+                  <div class="card-body">
+                    <img src="https://intercompras.com/images/product/HUAWEI_53011XKM.jpg">
+                    <h4>Laptop</h4>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-md-6 mb-4">
+                <div class="custom-card text-center">
+                  <div class="card-body">
+                    <img src="https://grilon3.com.ar/wp-content/uploads/2020/09/pla_850_rojo2.jpg">
+                    <h4>150 gramos de filamento PLA</h4>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-md-6 mb-4">
+                <div class="custom-card text-center">
+                  <div class="card-body">
+                    <img src="https://mm.digikey.com/Volume0/opasdata/d220001/medias/images/4348/MFG_Enders-3-S1-Pro.jpg">
+                    <h4>Impresora 3D</h4>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-md-6 mb-4">
+                <div class="custom-card text-center">
+                  <div class="card-body">
+                    <img src="https://images.vexels.com/media/users/3/132687/isolated/preview/0207a74a86c5255a9d6458e587f1e9e4-icono-de-wifi-plana.png?w=360">
+                    <h4>Acceso a WiFi</h4>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-md-6 mb-4">
+                <div class="custom-card text-center">
+                  <div class="card-body">
+                    <img src="https://curity.io/images/resources/code-examples/code-examples-vercel.jpg">
+                    <h4>Vercel</h4>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+
+          
+
+          <h2 class="mt-20 mb-5" style="margin-top: 30px;">Desarrollo</h2>
+
+
+<!-- Contenedor principal -->
+<div class="container">
+  <div class="row">
+    <!-- Card 1 -->
+    <div class="col-lg-12 mb-4">
+      <div class="card p-4">
+        <h5 class="card-title">1. Armado del sistema </h5>
+        <p class="card-text" style="font-size: 14px; color: #555;">
+          El primer paso fue la integración de los componentes electrónicos para la medición de los parámetros ambientales. Se utilizó un sensor DHT22 para registrar la temperatura y la humedad, y un sensor analógico de sonido OKY3137 para medir los niveles de ruido y convertirlos a decibeles. Ambos sensores fueron conectados a un microcontrolador ESP32, elegido por su capacidad de conexión WiFi y procesamiento eficiente de datos. El DHT22 fue alimentado con 3.3V del ESP32 y su línea de datos se conectó al pin GPIO26. Por otro lado, el sensor OKY3137 también se alimentó con 3.3V, con su salida analógica conectada al pin GPIO34 del microcontrolador. Para facilitar la integración y permitir modificaciones futuras, los componentes fueron montados en una protoboard.
+        </p>
+      </div>
+    </div>
+
+    <div class="col-lg-12 mb-4">
+      <div class="card p-4">
+        <h5 class="card-title">2. Programación en el IDE de Arduino </h5>
+        <p class="card-text" style="font-size: 14px; color: #555;">
+          Con el hardware ensamblado, se procedió a la programación del ESP32 en el IDE de Arduino. Se incluyeron las librerías necesarias para la comunicación con el sensor DHT22 y para el procesamiento de la señal analógica del sensor de sonido. Se implementó un algoritmo para convertir la lectura analógica del OKY3137 en niveles de sonido expresados en decibeles, calibrando la medición para obtener datos precisos.
+
+El código también estableció la conexión WiFi del microcontrolador y configuró el envío de datos en formato JSON a una API mediante solicitudes HTTP POST. De esta manera, las mediciones fueron transmitidas en tiempo real a un servidor para su posterior visualización. 
+          
+        </p>
+        
+      </div>
+    </div>
+
+
+    <div class="col-lg-12 mb-4">
+      <div class="card p-4">
+        <h5 class="card-title">3. Impresión 3D de la carcasa</h5>
+        <p class="card-text" style="font-size: 14px; color: #555;">
+          Para alojar los sensores y protegerlos del entorno, se diseñó e imprimió una carcasa en 3D, asegurando que permitiera un flujo adecuado de aire para que el sensor DHT22 pudiera tomar mediciones precisas de temperatura y humedad. También se dejó un espacio específico para el sensor de sonido, con aberturas estratégicas para mejorar la captura del ruido ambiental.
+
+El modelo fue impreso en 3D utilizando material PLA, seleccionado por su resistencia y facilidad de impresión. Luego de la impresión, se realizaron pruebas de ajuste para verificar que los sensores estuvieran correctamente posicionados y que la carcasa no afectara la precisión de las mediciones. 
+          
+        </p>
+        
+      </div>
+    </div>
+    
+
+    <div class="col-lg-12 mb-4">
+      <div class="card p-4">
+        <h5 class="card-title">4. Desarrollo y despliegue de la API y el dashboard</h5>
+        <p class="card-text" style="font-size: 14px; color: #555;">
+          Para la visualización de los datos en tiempo real, se desarrolló una API que recibe las mediciones del ESP32 y las almacena. La API fue construida con Flask, proporcionando endpoints para la gestión de los datos enviados por los sensores.
+
+Además, se diseñó un dashboard interactivo con React y Vite para mostrar los valores de temperatura, humedad y sonido en tiempo real.  Finalmente, el dashboard fue desplegado en Vercel, permitiendo que la plataforma fuera accesible desde cualquier dispositivo con conexión a internet.
+
+Este sistema de monitoreo ambiental permite identificar condiciones poco saludables dentro del campus universitario, proporcionando una herramienta efectiva para la toma de decisiones basada en datos y contribuyendo a la creación de un smart campus más eficiente y sostenible. 
+          
+        </p>
+        
+      </div>
+    </div>
+
+
+
+</div>
+          
+
+<h2 class="mt-20 mb-5" style="margin-top: 30px;">Simulación</h2>
+
+
+<div class="col-12 mb-4">
+  <div class="card p-4 text-center">
+    <h3 class="card-title mb-3">Proyecto</h3>
+    
+    <h5 class="mb-2">Video</h5>
+    <video width="100%" height="350" controls>
+      <source src="assets/images/VIDEOPROYECTO.mp4" type="video/mp4">
+      Tu navegador no soporta la reproducción de video.
+    </video>
+    
+    <h5 class="mt-4 mb-2">Datos</h5>
+    <div class="row">
+      <div class="col-12 text-center">
+        <h6 class="mb-3">Dashboard</h6>
+        <iframe width="100%" height="900" style="border: 1px solid #cccccc; border-radius: 10px;" 
+                src="https://proyectoredessonido.vercel.app/#/dashboard">
+        </iframe>
+      </div>
+    </div>
+
+    <h2 class="mt-20 mb-5" style="margin-top: 30px;">Galería de Imágenes</h2>
+
+<div class="row">
+  <div class="col-md-4 mb-4">
+    <div class="card p-3 text-center">
+      <img src="assets/images/esports.png" class="img-fluid rounded" alt="Imagen 1">
+      <h5 class="mt-3">Módulo ubicado en el salón de Esports</h5>
+    </div>
+  </div>
+  
+  <div class="col-md-4 mb-4">
+    <div class="card p-3 text-center">
+      <img src="assets/images/fab.png" class="img-fluid rounded" alt="Imagen 2">
+      <h5 class="mt-3">Módulo ubicado en el Innovation Lab</h5>
+    </div>
+  </div>
+
+  <div class="col-md-4 mb-4">
+    <div class="card p-3 text-center">
+      <img src="assets/images/IA.png" class="img-fluid rounded" alt="Imagen 3">
+      <h5 class="mt-3">Módulo ubicado en el Laboratorio de IA</h5>
+    </div>
+  </div>
+
+  
+
+  <div class="col-md-4 mb-4">
+    <div class="card p-3 text-center">
+      <img src="assets/images/oliver.png" class="img-fluid rounded" alt="Imagen 3">
+      <h5 class="mt-3">Módulo ubicado en el salón J-146</h5>
+    </div>
+  </div>
+  <div class="col-md-4 mb-4">
+    <div class="card p-3 text-center">
+      <img src="assets/images/armando.png" class="img-fluid rounded" alt="Imagen 3">
+      <h5 class="mt-3">Armado en Protoboard</h5>
+    </div>
+  </div>
+
+  <div class="col-md-4 mb-4">
+    <div class="card p-3 text-center">
+      <img src="assets/images/COMPLETO.png" class="img-fluid rounded" alt="Imagen 3">
+      <h5 class="mt-3">Armado en la carcasa</h5>
+    </div>
+  </div>
+
+</div>
+  </div>
+</div>
+
+
+
+
+
+
+
+<h2 class="mt-5 mb-5">Diseño</h2>
+            <p>El código comienza con la inclusión de las bibliotecas necesarias: DHT.h para manejar el sensor DHT22 de temperatura y humedad, WiFi.h para gestionar la conexión WiFi en el ESP32, HTTPClient.h para realizar solicitudes HTTP a un servidor, y cmath para operaciones matemáticas. Estas bibliotecas permiten interactuar con los sensores, conectar el dispositivo a Internet y enviar datos a un servidor remoto.
+
+              A continuación, se definen varias variables de configuración. Las variables ssid y pass almacenan las credenciales de la red WiFi a la que el ESP32 se conectará. La variable serverUrl contiene la URL del servidor al que se enviarán los datos del sensor. El pin al que está conectado el sensor de sonido se define como sensorPin, mientras que ledPin es el pin del LED que se encenderá si el nivel de sonido supera un umbral definido en la variable umbral. Además, se configuran las variables relacionadas con el sensor DHT22, como el dhtPin (pin de conexión) y dhtType (tipo de sensor). Finalmente, las variables tiempoDHT, intervaloDHT, tiempoPOST y intervaloPOST controlan el intervalo de tiempo entre las lecturas de los sensores y el envío de los datos al servidor.
+              
+              En la función setup(), se realizan las configuraciones iniciales. Se inicializa la comunicación serial para permitir la depuración y la visualización de datos en el monitor serie. Se configura el pin del LED como salida y se inicia el sensor DHT22. A continuación, el ESP32 se conecta a la red WiFi utilizando las credenciales proporcionadas. El código se queda esperando hasta que la conexión WiFi esté establecida, y una vez lograda, imprime un mensaje de confirmación.
+              
+              El bucle principal del programa, loop(), es donde ocurre la mayoría de la operación. Primero, se lee el valor del sensor de sonido a través de analogRead(sensorPin). Este valor se convierte a decibelios usando una fórmula matemática específica. Si el valor de los decibelios es menor o igual a 0, se ajusta a un valor predeterminado de 75 para evitar lecturas erróneas. Además, el código activa o desactiva el LED dependiendo de si el valor del sensor de sonido supera el umbral definido. Si el nivel de sonido es mayor que el umbral, el LED se enciende, de lo contrario, se apaga.
+              
+              Luego, se verifican los intervalos de tiempo para leer los datos del sensor DHT22. Si ha pasado el tiempo necesario (intervaloDHT), se lee la temperatura y la humedad del sensor. Si las lecturas son válidas, se almacenan en las variables temperatura y humedad y se muestran por el monitor serie. Si los datos son inválidos, el programa imprime un mensaje de error.
+              
+              Finalmente, el programa revisa si ha pasado el intervalo necesario para enviar los datos al servidor (definido por intervaloPOST). Si las lecturas de temperatura y humedad son válidas, el código crea un objeto JSON con los valores de sonido, temperatura y humedad, y lo envía al servidor mediante una solicitud HTTP POST. La respuesta del servidor se muestra en el monitor serie para confirmar si la operación fue exitosa. Si el ESP32 no está conectado a WiFi, se imprime un mensaje de error.
+              
+            
+              <figure style="text-align: center; margin: 20px auto; width: 100%;">
+                <img src="assets/images/CODIGOPRO1.png" alt="Descripción de la imagen" style="width: 100%;">
+                <figcaption style="font-size: 14px; color: gray; margin-top: 5px;">
+                    Estructura de código para acceso a la red y lectura de datos de sonido.
+                </figcaption>
+            </figure>
+
+            <figure style="text-align: center; margin: 20px auto; width: 100%;">
+              <img src="assets/images/CODDIGOPRO2.png" alt="Descripción de la imagen" style="width: 100%;">
+              <figcaption style="font-size: 14px; color: gray; margin-top: 5px;">
+                  Estructura de código para lectura de temperatura y humedad, y envío de datos.
+              </figcaption>
+          </figure>
+          
+          <p>Una parte importante del proyecto es la carcasa que aloja los componentes electrónicos del sistema. Para este propósito, se eligió una carcasa impresa en 3D, la cual tiene un diseño compacto que permite un adecuado flujo de aire para los sensores de temperatura y humedad. Esta carcasa no solo protege los componentes, sino que también facilita la correcta captación de los datos del sensor DHT22, ya que el flujo de aire es esencial para que el sensor pueda medir de manera precisa la temperatura y la humedad del ambiente.
+
+El diseño de la carcasa asegura que el sensor de sonido esté expuesto de manera eficiente al entorno sin obstáculos que puedan afectar su rendimiento.</p>
+          <div class="col-12 text-center">
+            <h6 class="mb-3">Carcasa</h6>
+            <iframe width="100%" height="900" style="border: 1px solid #cccccc; border-radius: 10px;" 
+                    src="https://realitymax.co/vJopNr">
+            </iframe>
+          </div>
+
+          <div class="col-12 text-center">
+            <h6 class="mb-3">Tapa</h6>
+            <iframe width="100%" height="900" style="border: 1px solid #cccccc; border-radius: 10px;" 
+                    src="https://realitymax.co/MQitQg">
+            </iframe>
+          </div>
+            
+          
+   
+
+
+<h2 class="mt-20 mb-5" style="margin-top: 40px;">Construcción del Circuito</h2>
+
+
+<!-- Contenedor principal -->
+<div class="container">
+  <div class="row justify-content-center">
+    <!-- Card 1 -->
+    <div class="col-md-12 mb-4">
+      <div class="card p-4 shadow-lg rounded-lg">
+        <h4 class="card-title mb-4">Constrrucción y comunicación serial</h4>
+        <div class="row align-items-center">
+          <!-- Video -->
+          <div class="col-md-6">
+            <div class="">
+                <img src="assets/images/construccion.jfif" class="img-fluid rounded" alt="Imagen 3">
+              
+            </div>
+          </div>
+          <!-- Código con slider vertical -->
+          <div class="col-md-6 position-relative">
+            <button class="copy-btn" onclick="copyCode('code1')">Copiar el código al portapapeles</button>
+            <div class="code-container rounded-lg">
+              <pre class="code-box"><code id="code1">
+#include DHT.h
+#include WiFi.h
+#include HTTPClient.h
+#include cmath 
+
+const char* ssid = "LAPTOP-AJFEJ7IT-6883";
+const char* pass = "12345678";
+const char* serverUrl = "https://lab-redes-orm.vercel.app/api/sensordata";
+
+const int sensorPin = 34;  // Pin analógico del sensor de sonido
+const int ledPin = 25;     // Pin del LED
+const int umbral = 2000;   // Umbral para encender el LED
+
+const int dhtPin = 26;     // Pin del sensor DHT
+const int dhtType = DHT22; // Tipo de sensor (DHT11 o DHT22)
+DHT dht(dhtPin, dhtType);
+
+unsigned long tiempoDHT = 0;
+const int intervaloDHT = 2000;
+
+unsigned long tiempoPOST = 0;
+const int intervaloPOST = 20000;
+
+float temperatura = NAN, humedad = NAN;
+
+void setup() {
+    Serial.begin(115200);
+    pinMode(ledPin, OUTPUT);
+    dht.begin();
+    
+    WiFi.begin(ssid, pass);
+    Serial.print("Conectando a WiFi");
+    while (WiFi.status() != WL_CONNECTED) {
+        delay(500);
+        Serial.print(".");
+    }
+    Serial.println("\nConectado a WiFi");
+}
+
+void loop() {
+    int valor = analogRead(sensorPin);
+    float decibelios = 0.1273 * valor - 218.18;
+    if (decibelios <= 0) {
+        decibelios = 75;
+    }
+    decibelios = constrain(decibelios, 0, 75);
+    
+    Serial.print("Valor del sensor de sonido: ");
+    Serial.print(valor);
+    Serial.print(" | Decibeles: ");
+    Serial.println(decibelios);
+
+    digitalWrite(ledPin, valor > umbral ? HIGH : LOW);
+
+    if (millis() - tiempoDHT >= intervaloDHT) {
+        tiempoDHT = millis();
+        float nuevaTemp = dht.readTemperature();
+        float nuevaHumedad = dht.readHumidity();
+
+        if (!isnan(nuevaTemp) && !isnan(nuevaHumedad)) {
+            temperatura = nuevaTemp;
+            humedad = nuevaHumedad;
+            Serial.print("Temperatura: ");
+            Serial.print(temperatura);
+            Serial.print(" °C | Humedad: ");
+            Serial.print(humedad);
+            Serial.println(" %");
+        } else {
+            Serial.println("Error al leer el sensor DHT");
+        }
+    }
+
+    if (millis() - tiempoPOST >= intervaloPOST) {
+        tiempoPOST = millis();
+        if (!isnan(temperatura) && !isnan(humedad)) {
+            enviarDatos(decibelios, temperatura, humedad);
+        } else {
+            Serial.println("Datos no válidos, no se envió el POST");
+        }
+    }
+
+    delay(100);
+}
+
+void enviarDatos(float sonido, float temperatura, float humedad) {
+    if (WiFi.status() == WL_CONNECTED) {
+        HTTPClient http;
+        http.begin(serverUrl);
+        http.addHeader("Content-Type", "application/json");
+        
+        String jsonPayload = "{";
+        jsonPayload += "\"sensor_id\":3,";
+        jsonPayload += "\"soundValue\":" + String(sonido) + ",";
+        jsonPayload += "\"temperatureValue\":" + String(temperatura) + ",";
+        jsonPayload += "\"humidityValue\":" + String(humedad) + "}";
+        
+        int httpResponseCode = http.POST(jsonPayload);
+        Serial.print("HTTP Response code: ");
+        Serial.println(httpResponseCode);
+        Serial.println("Payload enviado: " + jsonPayload);
+        
+        http.end();
+    } else {
+        Serial.println("Error: No conectado a WiFi");
+    }
+}
+              </code></pre>
+    
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+
+    <h2 class="mt-5 mb-5">Resultados</h2>
+    <p> Los resultados de la práctica fueron exitosos. Todos los componentes del sistema funcionaron como se esperaba. El sensor de sonido proporcionó lecturas precisas de los niveles de decibelios, y el LED se encendió correctamente cuando el nivel de sonido superó el umbral predefinido, indicando el correcto funcionamiento de la parte del sistema que controla la señal acústica.
+
+      El sensor DHT22 también proporcionó datos precisos de temperatura y humedad, y estos valores fueron correctamente leídos y mostrados en el monitor serie. Además, el envío de los datos a través de la conexión WiFi al servidor remoto se realizó sin inconvenientes. Los datos de los sensores fueron enviados con éxito al servidor mediante solicitudes HTTP POST, y la respuesta del servidor fue positiva, confirmando que los datos fueron recibidos correctamente.
+    <h2 class="mt-5 mb-5">Conclusiones</h2>
+    <p>En conclusión, este proyecto de monitoreo de niveles de ruido, temperatura y humedad es una contribución significativa hacia la creación de un entorno más saludable dentro del campus universitario. Al centrarse en la medición de la contaminación acústica, aborda un problema muchas veces subestimado pero con impactos profundos en la salud pública, como lo demuestra la OMS. La implementación de este sistema permite identificar y alertar sobre niveles de ruido potencialmente peligrosos, promoviendo así un ambiente más seguro y confortable para los estudiantes y el personal académico. Este proyecto no solo facilita el monitoreo en tiempo real, sino que también refuerza la importancia de crear espacios donde el bienestar de las personas sea prioritario, alineándose con las normativas internacionales de salud y el compromiso con la sostenibilidad.</p>
+
+              <h2 class="mt-5 mb-5">Refrencias</h2>
+              <ul>
+                <li><a href="https://www.juanjobeunza.com/esp32-wifi/" target="_blank">Beunza, J. (2020, 25 junio). ESP32 conexión via WiFi.</a></li>
+                <li><a href="https://www.electronicwings.com/esp32/esp32-wi-fi-basics-getting-started" target="_blank">ESP32 Wi-Fi Basics Getting started | ESP32. (s. f.). © 2018 ElectronicWings.</a></li>
+                <li><a href="https://docs.wokwi.com/guides/esp32-wifi" target="_blank">ESP32 WiFi Networking | Wokwi Docs. (s. f.).</a></li>
+                <li><a href="https://randomnerdtutorials.com/esp32-http-get-post-arduino/?utm_source=chatgpt.com" target="_blank">Santos, R., & Santos, R. (2022, 27 octubre). ESP32 HTTP GET and HTTP POST with Arduino IDE | Random Nerd Tutorials.</a></li>
+                
+              
+            </ul>
+            
+            
+              <div></div>
+              <div></div>
+                        
+  </div>
+</div>
+<h2 class="mt-5 mb-5">Descargables</h2>
+<div> 
+  <a href="assets/Files/proyectoredessonido-main.zip" download class="btn download-btn">Descargar ZIP del Dashboard Web</a>
+  <a href="assets/Files/ESP32 - Carcasa.zip" download class="btn download-btn">Descargar el modelo 3D de la carcasa</a>
+</div>
+
+
+<!-- Script para copiar el código -->
+<script>
+function copyCode(id) {
+  var code = document.getElementById(id).innerText;
+  navigator.clipboard.writeText(code).then(() => {
+    alert("Código copiado al portapapeles!");
+  });
+}
+</script>
+
+
+
+
+</section>
+
+<footer>
+  <div class="container">
+    <div class="col-lg-30">
+      <p>Copyright © 2036 Scholar Organization. All rights reserved. &nbsp;&nbsp;&nbsp; Design: <a href="https://templatemo.com" rel="nofollow" target="_blank">TemplateMo</a></p>
+    </div>
+  </div>
+</footer>
+
+<!-- Scripts -->
+<!-- Bootstrap core JavaScript -->
+<script src="vendor/jquery/jquery.min.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<script src="assets/js/isotope.min.js"></script>
+<script src="assets/js/owl-carousel.js"></script>
+<script src="assets/js/counter.js"></script>
+<script src="assets/js/custom.js"></script>
+
+
+
+
+</body>
+
+</script>
+
+</html>
