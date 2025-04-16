@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <script>
+      window.addEventListener('load', function() {
+        setTimeout(() => {
+          window.scrollTo(0, 0);
+        }, 200); // Espera unos milisegundos y luego desplaza al inicio
+      });
+    </script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <title>Portafolio Bernardo - Fernando</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/templatemo-scholar.css">
+    <link rel="stylesheet" href="assets/css/owl.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet"href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+<!--
+
+TemplateMo 586 Scholar
+
+https://templatemo.com/tm-586-scholar
+
+-->
+  </head>
+
+<body>
+
+  <!-- ***** Preloader Start ***** -->
+  <div id="js-preloader" class="js-preloader">
+    <div class="preloader-inner">
+      <span class="dot"></span>
+      <div class="dots">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </div>
+  <!-- ***** Preloader End ***** -->
+
+  <!-- ***** Header Area Start ***** -->
+  <header class="header-area header-sticky">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <nav class="main-nav">
+                    <!-- ***** Logo Start ***** -->
+                    <a href="index.html" class="logo">
+                        <h1>Laboratorio de Redes Digitales de Datos</h1>
+                    </a>
+                    <!-- ***** Logo End ***** -->
+                  
+                    <!-- ***** Menu Start ***** -->
+                    <ul class="nav">
+                      <li class="scroll-to-section"><a href="index.html" class="active">Regresar a las prácticas</a></li>
+                      
+                  </ul>   
+                    <a class='menu-trigger'>
+                        <span>Menu</span>
+                    </a>
+                    <!-- ***** Menu End ***** -->
+                </nav>
+            </div>
+        </div>
+    </div>
+  </header>
+  <!-- ***** Header Area End ***** -->
+
+  <div class="main-banner" id="inicio">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="owl-carousel owl-banner">
+            <div class="">
+              <div class="header-text">
+                <div class="col-lg-12 text-center">
+                  <h1 class="mt-5 text-white">Práctica 5: “Cables de Red”   </h1>
+                  <p class="text-white mt-3">Integrantes: Bernardo Bojalil Lorenzini, Fernando Agustín Hernández Rivas</p>
+                  <p class="text-white">Fecha: 16/04/2025</p>
+                  <p class="text-white">Tercer parcial</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section id="contenido" class="container mt-5">
+    <div class="row">
+        <div class="row justify-content-center">
+            <h2 class="mt-5 mb-5">Resumen</h2>
+            <p>Durante la práctica se investigaron las configuraciones de los cables de red estructurados, específicamente los tipos directo y cruzado. Se explicó cómo se prueban ambos tipos de cables utilizando herramientas adecuadas. Posteriormente, se procedió a armar tres cables directos y tres cables cruzados, asegurando su correcto funcionamiento mediante pruebas con un "tester". La actividad permitió reforzar los conocimientos sobre cableado para redes ethernet. Además, se desarrollaron habilidades prácticas en el armado y verificación de cables de red.</p>
+
+            <h2 class="mt-5 mb-5">Introducción</h2>
+            <p>El cableado estructurado es un componente esencial en el diseño y mantenimiento de redes de computadoras. A pesar del crecimiento de las tecnologías inalámbricas, los cables de red siguen siendo la opción más confiable para garantizar una transmisión de datos estable y segura. Entre los distintos tipos de cables que forman parte de estas redes, los cables directo y cruzado son fundamentales. Aunque ambos comparten las mismas características físicas, su diferencia radica en la disposición de los hilos internos, lo que determina su uso en distintas configuraciones de red.
+
+              Para comprender esta diferencia es necesario conocer los estándares T-568A y T-568B. Estos estándares definen el orden en el que se organizan los ocho hilos dentro de un conector RJ45. En un cable de red directo, ambos extremos están configurados siguiendo el mismo estándar (ya sea T-568A o T-568B), lo que permite una conexión lineal en la que el Pin 1 de un extremo corresponde con el Pin 1 del otro, y así sucesivamente. Este tipo de cable se utiliza para conectar dispositivos diferentes entre sí, como un computador con un switch, un router o un hub. Gracias a esta configuración, la señal de transmisión (TX) de un dispositivo llega directamente al receptor (RX) del otro.
+              
+              Por otro lado, el cable cruzado emplea diferentes estándares en cada extremo: uno con la disposición T-568A y el otro con T-568B. Esto provoca un cruce de las señales de transmisión y recepción, permitiendo que los dispositivos del mismo tipo, como dos computadoras o dos switches, puedan comunicarse directamente entre sí. En este tipo de conexiones, el Pin 1 de un extremo se conecta con el Pin 3 del otro, y el Pin 2 con el Pin 6, asegurando que las señales TX y RX se crucen adecuadamente. Aunque muchos dispositivos modernos integran funciones de autoajuste (Auto-MDI/MDI-X) que les permiten adaptarse al tipo de conexión, conocer estas diferencias sigue siendo clave, especialmente en redes donde se emplean equipos sin esta capacidad.
+              
+              Entender cuándo utilizar un cable directo o uno cruzado es vital para garantizar la correcta transmisión de datos. Si se utilizan cables incorrectos, los dispositivos podrían no establecer comunicación, lo que provocaría errores de conexión en la red. Por ejemplo, al conectar directamente dos computadoras sin intermediarios como un switch, es necesario un cable cruzado; en cambio, si se conectan mediante un switch, se emplean cables directos entre cada PC y el switch. Este principio también se aplica cuando se conectan switches entre sí o a routers, dependiendo del tipo de dispositivos involucrados.</p>
+
+            <h2 class="mt-5 mb-5">Material y Equipos</h2>
+            
+          <div class="container">
+            <div class="row justify-content-center"> 
+              <div class="col-lg-3 col-md-6 mb-4">
+                <div class="custom-card text-center">
+                  <div class="card-body">
+                    <img src="https://www.furukawalatam.com/sfc/servlet.shepherd/version/download/0684N000008LNZwQAO?asPdf=false&" alt="" class="img-fluid rounded-circle mb-3" style="width: 120px; height: 120px; object-fit: cover;">
+                    <h4>2 metros de cable cat6</h4>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="col-lg-3 col-md-6 mb-4">
+                <div class="custom-card text-center">
+                  <div class="card-body">
+                    <img src="https://www.cables-solutions.com/wp-content/uploads/2016/10/Cat-5e.jpg" alt="" class="img-fluid rounded-circle mb-3" style="width: 120px; height: 120px; object-fit: cover;">
+                    <h4>10 Metros de cable cat5e</h4>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-md-6 mb-4">
+                <div class="custom-card text-center">
+                  <div class="card-body">
+                    <img src="https://www.steren.com.mx/media/catalog/product/cache/295a12aacdcb0329a521cbf9876b29e7/image/174052330/pinza-ponchadora-de-plug-rj45.jpg">
+                    <h4>1 Pinza ponchadora</h4>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-md-6 mb-4">
+                <div class="custom-card text-center">
+                  <div class="card-body">
+                    <img src="https://m.media-amazon.com/images/I/51DYojdVc3L.jpg" alt="" class="img-fluid rounded-circle mb-3" style="width: 120px; height: 120px; object-fit: cover;">
+                    <h4>12 Conectores RJ45</h4>
+                  </div>
+                </div>
+              </div>
+            
+              <div class="col-lg-3 col-md-6 mb-4">
+                <div class="custom-card text-center">
+                  <div class="card-body">
+                    <img src="https://http2.mlstatic.com/D_NQ_NP_687674-MLU74976454285_032024-O.webp" alt="" class="img-fluid rounded-circle mb-3" style="width: 120px; height: 120px; object-fit: cover;">
+                    <h4>1 Tester de cable de red</h4>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+
+          
+
+          <h2 class="mt-20 mb-5" style="margin-top: 30px;">Desarrollo</h2>
+
+
+<!-- Contenedor principal -->
+<div class="container">
+  <div class="row">
+    <!-- Card 1 -->
+    <div class="col-lg-12 mb-4">
+      <div class="card p-4">
+        <h5 class="card-title">Ejercicio 1: Cables directos </h5>
+        <p class="card-text" style="font-size: 14px; color: #555;">
+          Para la elaboración de los cables de red directos, se utilizó cable UTP categoría 5e, conectores RJ45, una ponchadora y un probador de red. Se comenzó cortando un tramo de cable de aproximadamente un metro de longitud. Luego, se pelaron ambos extremos para exponer los ocho hilos internos, los cuales se ordenaron de acuerdo con el estándar T-568A en ambos lados. Esta disposición asegura que los pines de transmisión y recepción estén alineados correctamente para la conexión entre dispositivos diferentes. Una vez alineados y recortados, los hilos se insertaron en los conectores RJ45, se poncharon con la herramienta correspondiente, y finalmente se probó el cable con un tester, verificando la correcta continuidad de todos los pines.
+        </p>
+      </div>
+    </div>
+
+    <div class="col-lg-12 mb-4">
+      <div class="card p-4">
+        <h5 class="card-title">Ejercicio 2: Cables cruzados </h5>
+        <p class="card-text" style="font-size: 14px; color: #555;">
+          Para el armado de cada cable cruzado, se repitieron los primeros pasos: corte del cable, pelado de extremos y separación de hilos. La diferencia estuvo en la disposición de los cables en los conectores. En un extremo se utilizó el estándar T-568A y en el otro el T-568B, logrando así el cruce necesario entre los pines de transmisión y recepción. Esta configuración es ideal para conectar dispositivos del mismo tipo, como dos computadoras directamente entre sí. Tras insertar los hilos en los conectores y asegurarlos con la ponchadora, se utilizó el probador de red para confirmar el cruce de señales. El dispositivo mostró una secuencia alternada de encendido en los LEDs, lo cual indicó que el cruce se había realizado correctamente y que el cable funcionaba de forma adecuada. 
+        </p>
+        
+      </div>
+    </div>
+
+    
+</div>
+          
+
+<h2 class="mt-20 mb-5" style="margin-top: 30px;">Simulación</h2>
+
+
+<div class="col-12 mb-4">
+  <div class="card p-4 text-center">
+    <h3 class="card-title mb-3">Ejercicio 1</h3>
+    
+    <figure style="text-align: center; margin: 20px auto; width: 100%;">
+      <img src="assets/images/simCables.png" alt="Descripción de la imagen" style="width: 100%;">
+      <figcaption style="font-size: 14px; color: gray; margin-top: 5px;">
+          Simulación del funcionamiento de un cable directo y uno cruzado
+      </figcaption>
+  </figure>
+    
+  </div>
+</div>
+
+
+
+
+
+
+
+<h2 class="mt-5 mb-5">Diseño</h2>
+            <p>El diseño de los cables de red se basa en la correcta disposición de los hilos internos del cable UTP para asegurar una transmisión de datos eficiente y sin interferencias. En el caso de los cables directos, se utiliza el mismo estándar de conexión (en este caso T-568A) en ambos extremos, lo que permite que los pines de transmisión y recepción estén alineados de forma paralela. Este diseño es ideal para conectar dispositivos diferentes, como computadoras a switches o routers. Por otro lado, el cable cruzado requiere un extremo con el estándar T-568A y el otro con T-568B, lo cual invierte las posiciones de los pines de transmisión y recepción. Este cruce permite la comunicación directa entre dispositivos del mismo tipo, como dos computadoras o dos switches. La verificación con un tester es parte fundamental del diseño, ya que garantiza que la disposición interna de los hilos esté correctamente configurada según el tipo de cable.
+              
+            
+              <figure style="text-align: center; margin: 20px auto; width: 100%;">
+                <img src="assets/images/CablesFF.png" alt="Descripción de la imagen" style="width: 100%;">
+                <figcaption style="font-size: 14px; color: gray; margin-top: 5px;">
+                    Diagrama de conexión para T-568A y T-568B
+                </figcaption>
+            </figure>
+            
+
+   
+
+
+<h2 class="mt-20 mb-5" style="margin-top: 40px;">Construcción del Circuito</h2>
+
+
+<!-- Contenedor principal -->
+<div class="container">
+  <div class="row justify-content-center">
+    <!-- Card 1 -->
+    <div class="col-md-12 mb-4">
+      <div class="card p-4 shadow-lg rounded-lg">
+        <h4 class="card-title mb-4">Cable directo (se realizó el mismo pasra 3 cables)</h4>
+        <div class="row align-items-center">
+          <!-- Video -->
+          <div class="col-md-6">
+            <video class="video-box rounded-lg" controls>
+              <source src="assets/images/P5-V1.mp4" type="video/mp4">
+              Tu navegador no soporta la reproducción de video.
+            </video>
+          </div>
+          <!-- Imagen en lugar de código -->
+          <div class="col-md-6 position-relative">
+            <img src="assets/images/cable-directo.jpeg" alt="Imagen de cable directo" class="img-fluid rounded-lg">
+          </div>
+        </div>
+      </div>
+    </div>
+    
+
+      <!-- Card 1 -->
+      <div class="container">
+        <div class="row justify-content-center">
+          <!-- Card 1 -->
+          <div class="col-md-12 mb-4">
+            <div class="card p-4 shadow-lg rounded-lg">
+              <h4 class="card-title mb-4">Cable cruzado (se realizó el mismo procedimiento para 3 cables)</h4>
+              <div class="row align-items-center">
+                <!-- Video -->
+                <div class="col-md-6">
+                  <video class="video-box rounded-lg" controls>
+                    <source src="assets/images/P5-V2.mp4" type="video/mp4">
+                    Tu navegador no soporta la reproducción de video.
+                  </video>
+                </div>
+                <!-- Imagen en lugar de código -->
+                <div class="col-md-6 position-relative">
+                  <img src="assets/images/cable-cruzado.jpeg" alt="Imagen de cable directo" class="img-fluid rounded-lg">
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+    </div>
+
+
+    <h2 class="mt-5 mb-5">Resultados</h2>
+    <p> Durante la elaboración de los cables, se presentaron algunas dificultades, especialmente al trabajar con cables categoría 6. Estos cables resultaron más complicados de manejar debido a su mayor grosor y al recubrimiento interno que protege los pares trenzados, lo que dificultó el proceso de pelado y ordenamiento de los hilos. Sin embargo, con paciencia y cuidado, se logró completar correctamente el armado de los seis cables, tres directos y tres cruzados.
+
+      Todos los cables fueron ponchados adecuadamente, asegurando que una parte del aislante exterior quedara dentro del conector RJ45. Esto es importante ya que ayuda a mantener la firmeza de la conexión y reduce el riesgo de interferencias electromagnéticas. 
+
+    
+    <h2 class="mt-5 mb-5">Conclusiones</h2>
+    <p>La práctica permitió comprender de manera clara la diferencia entre un cable de red directo y uno cruzado, así como su correcta aplicación según el tipo de conexión. A pesar de las dificultades encontradas, especialmente al trabajar con cables categoría 6 debido a su grosor y recubrimiento interno, se logró armar y probar exitosamente los seis cables requeridos. Esta experiencia reforzó la importancia de seguir los estándares de cableado y de cuidar detalles para el funcionamiento correcto del cableado.</p>
+
+              <h2 class="mt-5 mb-5">Refrencias</h2>
+              <ul>
+                <li><a href="https://www.fs.com/mx/blog/cul-es-la-diferencia-entre-cable-de-red-directo-y-cable-de-red-cruzado-4768.html" target="_blank">Fs. (s. f.). ¿Cuál es la diferencia entre cable de red directo y cable de red cruzado? FS.com.</a></li>
+                <li><a href="https://www.geeksforgeeks.org/difference-between-straight-through-cable-and-crossover-cable/" target="_blank">GeeksforGeeks. (2024, 9 julio). Difference Between Straight Through Cable and Crossover Cable. GeeksforGeeks.</a></li>
+                <li><a href="https://www.lindenphotonics.com/understanding-ethernet-crossover-cables" target="_blank">Lindenphotonics. (2024, 9 septiembre). Understanding Ethernet crossover cables - Linden Photonics Inc. Linden Photonics Inc.</a></li>
+
+            </ul>
+            
+            
+              <div></div>
+              <div></div>
+                        
+  </div>
+</div>
+
+
+<!-- Script para copiar el código -->
+<script>
+function copyCode(id) {
+  var code = document.getElementById(id).innerText;
+  navigator.clipboard.writeText(code).then(() => {
+    alert("Código copiado al portapapeles!");
+  });
+}
+</script>
+
+
+
+
+</section>
+
+<footer>
+  <div class="container">
+    <div class="col-lg-30">
+      <p>Copyright © 2036 Scholar Organization. All rights reserved. &nbsp;&nbsp;&nbsp; Design: <a href="https://templatemo.com" rel="nofollow" target="_blank">TemplateMo</a></p>
+    </div>
+  </div>
+</footer>
+
+<!-- Scripts -->
+<!-- Bootstrap core JavaScript -->
+<script src="vendor/jquery/jquery.min.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<script src="assets/js/isotope.min.js"></script>
+<script src="assets/js/owl-carousel.js"></script>
+<script src="assets/js/counter.js"></script>
+<script src="assets/js/custom.js"></script>
+
+
+
+
+</body>
+
+</script>
+
+</html>
