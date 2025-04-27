@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <script>
+      window.addEventListener('load', function() {
+        setTimeout(() => {
+          window.scrollTo(0, 0);
+        }, 200); // Espera unos milisegundos y luego desplaza al inicio
+      });
+    </script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <title>Portafolio Bernardo - Fernando</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/templatemo-scholar.css">
+    <link rel="stylesheet" href="assets/css/owl.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet"href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+<!--
+
+TemplateMo 586 Scholar
+
+https://templatemo.com/tm-586-scholar
+
+-->
+  </head>
+
+<body>
+
+  <!-- ***** Preloader Start ***** -->
+  <div id="js-preloader" class="js-preloader">
+    <div class="preloader-inner">
+      <span class="dot"></span>
+      <div class="dots">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </div>
+  <!-- ***** Preloader End ***** -->
+
+  <!-- ***** Header Area Start ***** -->
+  <header class="header-area header-sticky">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <nav class="main-nav">
+                    <!-- ***** Logo Start ***** -->
+                    <a href="index.html" class="logo">
+                        <h1>Laboratorio de Redes Digitales de Datos</h1>
+                    </a>
+                    <!-- ***** Logo End ***** -->
+                  
+                    <!-- ***** Menu Start ***** -->
+                    <ul class="nav">
+                      <li class="scroll-to-section"><a href="index.html" class="active">Regresar a las prácticas</a></li>
+                      
+                  </ul>   
+                    <a class='menu-trigger'>
+                        <span>Menu</span>
+                    </a>
+                    <!-- ***** Menu End ***** -->
+                </nav>
+            </div>
+        </div>
+    </div>
+  </header>
+  <!-- ***** Header Area End ***** -->
+
+  <div class="main-banner" id="inicio">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="owl-carousel owl-banner">
+            <div class="">
+              <div class="header-text">
+                <div class="col-lg-12 text-center">
+                  <h1 class="mt-5 text-white">Práctica 6: “Configuración de servidor para Red Local”   </h1>
+                  <p class="text-white mt-3">Integrantes: Bernardo Bojalil Lorenzini, Fernando Agustín Hernández Rivas</p>
+                  <p class="text-white">Fecha: 26/04/2025</p>
+                  <p class="text-white">Tercer parcial</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section id="contenido" class="container mt-5">
+    <div class="row">
+        <div class="row justify-content-center">
+            <h2 class="mt-5 mb-5">Resumen</h2>
+            <p>En esta práctica se busca conocer, investigar e identificar los pasos necesarios para configurar una red local y permitir el acceso a recursos de un equipo en red. Se realiza la instalación de XAMPP para montar un servidor web local, habilitando los servicios de Apache y configurando el acceso a través del puerto 80. También se identifica la dirección IP asignada al equipo servidor dentro de la red y se comprueba el acceso al sitio web montado desde tres dispositivos distintos conectados a la misma red, asegurando así la correcta configuración del entorno de red y servidor.</p>
+
+            <h2 class="mt-5 mb-5">Introducción</h2>
+            <p>En el ámbito del desarrollo web y la administración de sistemas, la capacidad de configurar entornos locales que simulen condiciones reales de producción es esencial para el diseño, prueba y despliegue eficiente de aplicaciones. Una red local (LAN, por sus siglas en inglés) permite la interconexión de múltiples dispositivos dentro de un área geográfica limitada, facilitando el intercambio de recursos y la comunicación entre equipos. Esta infraestructura es fundamental no solo en entornos empresariales, sino también en contextos educativos y domésticos, donde se requiere compartir archivos, impresoras y servicios de manera eficiente.​
+
+              Para implementar y gestionar servicios web en una red local, es común utilizar herramientas que simplifiquen la instalación y configuración de los componentes necesarios. XAMPP es una de las soluciones más populares en este sentido. Se trata de un paquete de software libre que incluye el servidor web Apache, la base de datos MariaDB, y los intérpretes para lenguajes de programación como PHP y Perl. Su diseño multiplataforma y su facilidad de instalación lo convierten en una opción ideal para desarrolladores que buscan establecer un entorno de pruebas local sin complicaciones. ​
+              
+              La configuración de un servidor local con XAMPP permite a los usuarios montar sitios web y aplicaciones en su propio equipo, facilitando el desarrollo y la prueba de funcionalidades antes de su implementación en un entorno de producción. Además, al habilitar el acceso a través del puerto 80 y configurar adecuadamente el firewall, es posible permitir que otros dispositivos dentro de la misma red local accedan a los recursos alojados en el servidor, emulando así un entorno colaborativo o de cliente-servidor.</p>
+
+            <h2 class="mt-5 mb-5">Material y Equipos</h2>
+            
+          <div class="container">
+            <div class="row justify-content-center"> 
+              <div class="col-lg-3 col-md-6 mb-4">
+                <div class="custom-card text-center">
+                  <div class="card-body">
+                    <img src="https://intercompras.com/images/product/HUAWEI_53011XKM.jpg">
+                    <h4>Laptop</h4>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="col-lg-3 col-md-6 mb-4">
+                <div class="custom-card text-center">
+                  <div class="card-body">
+                    <img src="https://blog.phonehouse.es/wp-content/uploads/2017/06/PC-movil.jpg">
+                    <h4>3 Dispositivos móviles</h4>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-md-6 mb-4">
+                <div class="custom-card text-center">
+                  <div class="card-body">
+                    <img src="https://simplecodetips.wordpress.com/wp-content/uploads/2018/06/xampp-logo-banner.png?w=1400">
+                    <h4>Plataforma XAMPP</h4>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-md-6 mb-4">
+                <div class="custom-card text-center">
+                  <div class="card-body">
+                    <img src="https://images.vexels.com/media/users/3/132687/isolated/preview/0207a74a86c5255a9d6458e587f1e9e4-icono-de-wifi-plana.png?w=360">
+                    <h4>Acceso a WiFi</h4>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+
+          
+
+          <h2 class="mt-20 mb-5" style="margin-top: 30px;">Desarrollo</h2>
+
+
+<!-- Contenedor principal -->
+<div class="container">
+  <div class="row">
+    <!-- Card 1 -->
+    <div class="col-lg-12 mb-4">
+      <div class="card p-4">
+        <h5 class="card-title">Ejercicio: Servidor Apache </h5>
+        <p class="card-text" style="font-size: 14px; color: #555;">
+          Para iniciar la práctica, se abrió la aplicación XAMPP y en la pestaña "Manage Servers" se activó el servicio Apache Web Server, encargado de ejecutar el servidor local. Una vez en estado "Running", se accedió a la carpeta htdocs dentro del directorio de instalación de XAMPP, donde se creó un archivo llamado index.html con una estructura básica en HTML que mostraba el mensaje "El servidor local funciona.".
+
+Posteriormente, se verificó el funcionamiento del servidor local abriendo un navegador web y accediendo a http://localhost, donde se visualizó correctamente el mensaje programado. Para permitir el acceso desde otros dispositivos, se identificó la dirección IP local del equipo ejecutando el comando ipconfig getifaddr en0 en la Terminal, obteniendo la IP 172.18.120.247.
+
+Finalmente, se comprobó el acceso al servidor ingresando la dirección IP desde tres dispositivos diferentes conectados a la misma red: dos celulares y una laptop. En todos los casos, el sitio web se mostró correctamente, confirmando que el servidor Apache y la configuración de red local funcionaban adecuadamente.
+        </p>
+      </div>
+    </div>
+
+
+    
+</div>
+          
+
+<h2 class="mt-20 mb-5" style="margin-top: 30px;">Simulación</h2>
+
+
+<div class="col-12 mb-4">
+  <div class="card p-4 text-center">
+    <h3 class="card-title mb-3">Ejercicio</h3>
+    
+    <figure style="text-align: center; margin: 20px auto; width: 100%;">
+      <img src="assets/images/SimServer.png" alt="Descripción de la imagen" style="width: 100%;">
+      <figcaption style="font-size: 14px; color: gray; margin-top: 5px;">
+          Esquema de conexión de los dispositivos utilizados para la práctica.
+      </figcaption>
+  </figure>
+    
+  </div>
+</div>
+
+
+
+
+
+
+
+<h2 class="mt-5 mb-5">Diseño</h2>
+            <p><p>El diseño de la práctica se basó en la creación de una estructura básica de un sitio web utilizando el lenguaje de marcado HTML. El objetivo principal fue montar un archivo sencillo que permitiera verificar de manera rápida y clara el funcionamiento del servidor local configurado con XAMPP.</p>
+
+            <p>Para ello, se elaboró un archivo llamado <strong>index.html</strong> dentro de la carpeta <strong>htdocs</strong>, la cual actúa como el directorio raíz del servidor Apache. El archivo HTML contiene una estructura mínima pero funcional, iniciando con la declaración <code>&lt;!DOCTYPE html&gt;</code>, seguida de las etiquetas principales <code>&lt;html&gt;</code>, <code>&lt;head&gt;</code>, <code>&lt;title&gt;</code>, <code>&lt;body&gt;</code> y <code>&lt;h1&gt;</code>. En el encabezado (<code>&lt;head&gt;</code>), se incluyó el título de la página, nombrado "Práctica 6 - Bernardo &amp; Fernando", mientras que en el cuerpo (<code>&lt;body&gt;</code>) se colocó un encabezado de primer nivel (<code>&lt;h1&gt;</code>) que muestra el mensaje "El servidor local funciona."</p>
+        
+            <p>Este diseño sencillo permite confirmar de manera inmediata que el servidor web está activo y que los dispositivos conectados en la misma red pueden acceder correctamente al sitio alojado.</p>
+              
+            
+              <figure style="text-align: center; margin: 20px auto; width: 100%;">
+                <img src="assets/images/DisenoHTML.png" alt="Descripción de la imagen" style="width: 100%;">
+                <figcaption style="font-size: 14px; color: gray; margin-top: 5px;">
+                    Código del sitio web alojado en el servidor.
+                </figcaption>
+            </figure>
+            
+
+   
+
+
+<h2 class="mt-20 mb-5" style="margin-top: 40px;">Construcción</h2>
+
+
+<figure style="text-align: center; margin: 20px auto; width: 100%;">
+  <img src="assets/images/XAMPP.png" alt="Descripción de la imagen" style="width: 100%;">
+  <figcaption style="font-size: 14px; color: gray; margin-top: 5px;">
+      Vista de XAMPP con el servidor habilitado
+  </figcaption>
+</figure>
+
+    <div class="row">
+      <div class="col-md-4 mb-4">
+        <div class="card p-3 text-center">
+          <img src="assets/images/LapHTML.png" class="img-fluid rounded" alt="Imagen 1">
+          <h5 class="mt-3">Acceso prueba desde laptop (Windows)</h5>
+        </div>
+      </div>
+      
+      <div class="col-md-4 mb-4">
+        <div class="card p-3 text-center">
+          <img src="assets/images/PHONE1.png" class="img-fluid rounded" alt="Imagen 2">
+          <h5 class="mt-3">Acceso prueba desde celular (iPhone)</h5>
+        </div>
+      </div>
+    
+      <div class="col-md-4 mb-4">
+        <div class="card p-3 text-center">
+          <img src="assets/images/PHONE2.png" class="img-fluid rounded" alt="Imagen 3">
+          <h5 class="mt-3">Acceso prueba desde celular (Android)</h5>
+        </div>
+      </div>
+    
+      
+      
+    
+    
+    </div>
+      </div>
+    </div>
+
+
+
+    </div>
+
+
+    <h2 class="mt-5 mb-5">Resultados</h2>
+    <p> Al finalizar la configuración del servidor local utilizando XAMPP, se comprobó que el servicio Apache funcionaba correctamente. El sitio web creado en el archivo index.html fue accesible de manera local escribiendo http://localhost en el navegador del equipo donde se instaló XAMPP.
+
+      Posteriormente, para validar el acceso desde otros dispositivos dentro de la misma red, se identificó la dirección IP del equipo servidor. Ingresando esta IP en el navegador web de distintos dispositivos, se pudo acceder correctamente al sitio web alojado en el servidor local. Esta prueba confirmó que la configuración fue exitosa, permitiendo que el servidor montado en el equipo local fuera visible desde teléfonos, laptops y los dispositivos conectados a la misma red. 
+
+    
+    <h2 class="mt-5 mb-5">Conclusiones</h2>
+    <p>La práctica permitió comprender de manera práctica cómo configurar y utilizar un servidor local mediante el uso de XAMPP. A través de la instalación y activación del servicio Apache, se logró montar un sitio web básico que fue accesible tanto desde el equipo servidor como desde otros dispositivos conectados a la misma red, demostrando el correcto funcionamiento del entorno de red local.
+
+      El uso de XAMPP simplificó considerablemente el proceso de creación de un servidor, ya que integra en una sola herramienta los servicios fundamentales necesarios para el desarrollo web, como Apache, MariaDB y PHP. Esta facilidad permite a los usuarios crear, probar y modificar sitios web de forma segura en un entorno controlado, sin necesidad de utilizar un servidor real conectado a Internet.
+      
+      Comparado con un servidor real, un servidor local funciona de manera similar en cuanto a servir archivos y gestionar peticiones, pero se limita a un ámbito privado, generalmente dentro de una misma red local. Mientras que los servidores reales están diseñados para ser accesibles públicamente y deben enfrentar desafíos como la seguridad externa, la estabilidad continua y el tráfico de múltiples usuarios simultáneos, los servidores locales son principalmente herramientas de desarrollo y prueba, ofreciendo un entorno seguro donde los errores pueden corregirse antes de la publicación final.</p>
+
+              <h2 class="mt-5 mb-5">Refrencias</h2>
+              <ul>
+                <li><a href="https://www.netacad.com/es/" target="_blank">Cisco Networking Academy: Network Basics. (s. f.). NetAcad.</a></li>
+<li><a href="https://blog.coverix.mx/servidor-local-ventajas-y-desventajas#:~:text=Un%20servidor%20local%20es%20un,u%20oficinas%20de%20las%20empresas." target="_blank">CoveriX. (2024, 19 junio). Ventajas y desventajas de los servidores locales. Coverix.</a></li>
+<li><a href="https://www.apachefriends.org/es/faq_windows.html" target="_blank">XAMPP FAQs for Windows. (s. f.). Apache Friends.</a></li>
+
+
+            </ul>
+            
+            
+              <div></div>
+              <div></div>
+                     
+              
+              <h2 class="mt-5 mb-5">Descargables</h2>
+              <div> 
+                <a href="assets/Files/index.html" download class="btn download-btn">Descargar HTML de pruebas</a>
+                
+              </div>
+  </div>
+</div>
+
+
+<!-- Script para copiar el código -->
+<script>
+function copyCode(id) {
+  var code = document.getElementById(id).innerText;
+  navigator.clipboard.writeText(code).then(() => {
+    alert("Código copiado al portapapeles!");
+  });
+}
+</script>
+
+
+
+
+</section>
+
+<footer>
+  <div class="container">
+    <div class="col-lg-30">
+      <p>Copyright © 2036 Scholar Organization. All rights reserved. &nbsp;&nbsp;&nbsp; Design: <a href="https://templatemo.com" rel="nofollow" target="_blank">TemplateMo</a></p>
+    </div>
+  </div>
+</footer>
+
+<!-- Scripts -->
+<!-- Bootstrap core JavaScript -->
+<script src="vendor/jquery/jquery.min.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<script src="assets/js/isotope.min.js"></script>
+<script src="assets/js/owl-carousel.js"></script>
+<script src="assets/js/counter.js"></script>
+<script src="assets/js/custom.js"></script>
+
+
+
+
+
+</body>
+
+</script>
+
+</html>
