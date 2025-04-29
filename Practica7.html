@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <script>
+      window.addEventListener('load', function() {
+        setTimeout(() => {
+          window.scrollTo(0, 0);
+        }, 200); // Espera unos milisegundos y luego desplaza al inicio
+      });
+    </script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <title>Portafolio Bernardo - Fernando</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/templatemo-scholar.css">
+    <link rel="stylesheet" href="assets/css/owl.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet"href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+<!--
+
+TemplateMo 586 Scholar
+
+https://templatemo.com/tm-586-scholar
+
+-->
+  </head>
+
+<body>
+
+  <!-- ***** Preloader Start ***** -->
+  <div id="js-preloader" class="js-preloader">
+    <div class="preloader-inner">
+      <span class="dot"></span>
+      <div class="dots">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </div>
+  <!-- ***** Preloader End ***** -->
+
+  <!-- ***** Header Area Start ***** -->
+  <header class="header-area header-sticky">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <nav class="main-nav">
+                    <!-- ***** Logo Start ***** -->
+                    <a href="index.html" class="logo">
+                        <h1>Laboratorio de Redes Digitales de Datos</h1>
+                    </a>
+                    <!-- ***** Logo End ***** -->
+                  
+                    <!-- ***** Menu Start ***** -->
+                    <ul class="nav">
+                      <li class="scroll-to-section"><a href="index.html" class="active">Regresar a las prácticas</a></li>
+                      
+                  </ul>   
+                    <a class='menu-trigger'>
+                        <span>Menu</span>
+                    </a>
+                    <!-- ***** Menu End ***** -->
+                </nav>
+            </div>
+        </div>
+    </div>
+  </header>
+  <!-- ***** Header Area End ***** -->
+
+  <div class="main-banner" id="inicio">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="owl-carousel owl-banner">
+            <div class="">
+              <div class="header-text">
+                <div class="col-lg-12 text-center">
+                  <h1 class="mt-5 text-white">Práctica 7: “Redes de computadora con Switches y Cables”   </h1>
+                  <p class="text-white mt-3">Integrantes: Bernardo Bojalil Lorenzini, Fernando Agustín Hernández Rivas</p>
+                  <p class="text-white">Fecha: 28/04/2025</p>
+                  <p class="text-white">Tercer parcial</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section id="contenido" class="container mt-5">
+    <div class="row">
+        <div class="row justify-content-center">
+            <h2 class="mt-5 mb-5">Resumen</h2>
+            <p>La práctica tiene como propósito conocer, identificar y comprobar el funcionamiento de una red de área local utilizando switches y routers. Se deben elaborar dos redes: una empleando un switch y otra un router, conectando al menos tres computadoras y un servidor, utilizando asignación automática de IP y seleccionando el tipo de cable adecuado. Posteriormente, se realizan pruebas de conectividad mediante comandos como PING y se verifica el acceso a la página web del servidor. Finalmente, ambas redes deben unirse y se debe comprobar el intercambio de archivos entre los dispositivos.</p>
+
+            <h2 class="mt-5 mb-5">Introducción</h2>
+            <p>Una red de área local (LAN, por sus siglas en inglés) es un sistema de interconexión de computadoras y otros dispositivos dentro de un espacio geográfico reducido, como una oficina, un laboratorio, un edificio o incluso un hogar. Estas redes permiten compartir datos, aplicaciones y recursos físicos, como impresoras, servidores y acceso a Internet, de manera rápida, segura y eficiente. Gracias a su alta velocidad de transmisión y su bajo coste de implementación y mantenimiento, las LANs se han convertido en una infraestructura indispensable en entornos empresariales, académicos y domésticos.
+
+              El diseño y correcto funcionamiento de una LAN requiere de dispositivos esenciales, principalmente los switches y los routers. Un switch es un equipo de red que opera principalmente en la capa 2 del modelo OSI (capa de enlace de datos) y que se encarga de interconectar dispositivos dentro de una misma red local. Utiliza direcciones MAC (Media Access Control) para dirigir los datos de manera precisa a su destino dentro de la red, minimizando las colisiones y mejorando el rendimiento general. A través del uso de switches, es posible lograr comunicaciones simultáneas entre varios dispositivos, optimizando así el tráfico de red y la eficiencia de los recursos.
+              
+              En contraste, un router es un dispositivo que opera principalmente en la capa 3 del modelo OSI (capa de red) y tiene como función principal interconectar diferentes redes, como una LAN con una red de área amplia (WAN), por ejemplo, Internet. Además de enrutar el tráfico de datos entre redes distintas, los routers suelen incorporar funciones adicionales como servidores DHCP (Dynamic Host Configuration Protocol), firewalls y puntos de acceso inalámbricos. El DHCP permite asignar automáticamente direcciones IP a cada dispositivo de la red, lo cual simplifica enormemente la administración y configuración de la infraestructura, evitando conflictos de direcciones y facilitando la expansión de la red conforme sea necesario.
+              
+              La correcta verificación de la conectividad en una LAN es fundamental para asegurar su funcionamiento adecuado. Para ello, se emplean herramientas de diagnóstico como el comando PING. Este comando envía paquetes de solicitud de eco (ICMP) a un dispositivo objetivo y mide el tiempo que tarda en recibir una respuesta, permitiendo determinar si existe conectividad, identificar posibles problemas de latencia o pérdidas de paquetes, y evaluar la estabilidad de la red.</p>
+
+            <h2 class="mt-5 mb-5">Material y Equipos</h2>
+            
+          <div class="container">
+            <div class="row justify-content-center"> 
+              <div class="col-lg-3 col-md-6 mb-4">
+                <div class="custom-card text-center">
+                  <div class="card-body">
+                    <img src="https://intercompras.com/images/product/HUAWEI_53011XKM.jpg">
+                    <h4>4 Laptops</h4>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="col-lg-3 col-md-6 mb-4">
+                <div class="custom-card text-center">
+                  <div class="card-body">
+                    <img src="https://blog.phonehouse.es/wp-content/uploads/2017/06/PC-movil.jpg">
+                    <h4>3 Dispositivos móviles</h4>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-md-6 mb-4">
+                <div class="custom-card text-center">
+                  <div class="card-body">
+                    <img src="https://simplecodetips.wordpress.com/wp-content/uploads/2018/06/xampp-logo-banner.png?w=1400">
+                    <h4>Plataforma XAMPP</h4>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-md-6 mb-4">
+                <div class="custom-card text-center">
+                  <div class="card-body">
+                    <img src="https://www.steren.com.mx/media/catalog/product/cache/0236bbabe616ddcff749ccbc14f38bf2/image/1584962ce/cable-ethernet-utp-cat-6-de-7-6-m.jpg" alt="" class="img-fluid rounded-circle mb-3" style="width: 120px; height: 120px; object-fit: cover;">
+                    <h4>5 Cables directos</h4>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-md-6 mb-4">
+                <div class="custom-card text-center">
+                  <div class="card-body">
+                    <img src="https://compusales.com.mx/24705-home_default/switch-cisco-smb-24-puertos-10-100-fast-ethernet-poe-185w-2-puertos-sfp-administ.jpg" alt="" class="img-fluid rounded-circle mb-3" style="width: 120px; height: 120px; object-fit: cover;">
+                    <h4>1 Switch</h4>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-md-6 mb-4">
+                <div class="custom-card text-center">
+                  <div class="card-body">
+                    <img src="https://www.officedepot.com.mx/medias/100040157.jpg-1200ftw?context=bWFzdGVyfHJvb3R8MTE3NTgwfGltYWdlL2pwZWd8YUROaUwyZzNOeTh4TURFM01UVXpNakV4TlRrNU9DOHhNREF3TkRBeE5UY3VhbkJuWHpFeU1EQm1kSGN8NWY3ZmMwZmIxZDI4NDBhMGQwMTgxMzcwNGYwMTcwYmYxOTA4N2MzMDEyM2UwMDI0MzMyZTE2Nzc3MDEyY2VjOA" alt="" class="img-fluid rounded-circle mb-3" style="width: 120px; height: 120px; object-fit: cover;">
+                    <h4>1 Router</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          
+
+          <h2 class="mt-20 mb-5" style="margin-top: 30px;">Desarrollo</h2>
+
+
+<!-- Contenedor principal -->
+<div class="container">
+  <div class="row">
+    <!-- Card 1 -->
+    <div class="col-lg-12 mb-4">
+      <div class="card p-4">
+        <h5 class="card-title">Ejercicio 1: Switch </h5>
+        <p class="card-text" style="font-size: 14px; color: #555;">
+          Para la elaboración de la red, en primer lugar se seleccionaron los equipos necesarios: un switch, cuatro computadoras (tres como clientes y una destinada como servidor) y el cableado apropiado. Se utilizó cable de red tipo cable par trenzado categoría 5e (Cat 5e), que es adecuado para conexiones de hasta 1 Gbps dentro de redes LAN. Para este tipo de conexión, dado que los dispositivos (computadoras y switch) son diferentes, se emplearon cables de red directos (cableado recto, T568A en ambos extremos).
+
+A continuación, se procedió a conectar cada computadora al switch utilizando los cables directos, asegurándose de que cada dispositivo estuviera correctamente energizado y conectado en un puerto disponible del switch. El servidor también fue conectado de la misma manera al switch. Para la configuración de la red, se habilitó la opción de asignación automática de direcciones IP mediante DHCP. En este caso, se aprovechó el servidor como origen de la asignación DHCP, o en su defecto, se conectó temporalmente un router con servicio DHCP activo para que proporcionara las direcciones IP a todos los dispositivos conectados.
+
+Una vez realizada la conexión física y la configuración básica, se verificó que cada computadora recibiera correctamente una dirección IP automática dentro del mismo rango de red. Para comprobar la conectividad entre los dispositivos, se utilizó el comando PING desde cada computadora hacia las demás, observando que los paquetes enviados fueran recibidos correctamente y que no existieran pérdidas, lo que indicó una comunicación exitosa entre todos los equipos.
+        </p>
+      </div>
+    </div>
+
+    <div class="col-lg-12 mb-4">
+      <div class="card p-4">
+        <h5 class="card-title">Ejercicio 2: Router </h5>
+        <p class="card-text" style="font-size: 14px; color: #555;">
+          Para la elaboración de la red utilizando un router, se conectaron tres computadoras cliente y una computadora servidor utilizando cable par trenzado categoría 5e (Cat 5e), empleando cables directos (T568A) para las conexiones entre los dispositivos y el router. Cada computadora fue conectada a un puerto LAN del router, asegurando una correcta conexión física. El router se configuró para asignar automáticamente direcciones IP a todos los dispositivos mediante su servidor DHCP interno, lo que permitió que cada equipo obtuviera una dirección IP dentro del mismo segmento de red sin intervención manual. Una vez verificada la obtención de IP en cada dispositivo, se realizaron pruebas de conectividad utilizando el comando PING, enviando paquetes entre las computadoras y hacia el servidor, confirmando que no existían pérdidas de datos y que la comunicación era exitosa. Finalmente, se configuró un servicio web en el servidor y, mediante un navegador web en cada computadora cliente, se accedió a la página alojada en el servidor ingresando su dirección IP, comprobando así el correcto funcionamiento de la red tanto a nivel de conexión como de servicios.
+        </p>
+      </div>
+    </div>
+
+    <div class="col-lg-12 mb-4">
+      <div class="card p-4">
+        <h5 class="card-title">Ejercicio 3: Router + Switch</h5>
+        <p class="card-text" style="font-size: 14px; color: #555;">
+          Para integrar ambas redes, se conectó un puerto del switch a un puerto LAN del router utilizando un cable directo, lo que permitió la comunicación entre los dispositivos de ambos segmentos. Además, se añadieron tres celulares a la red, conectándolos de manera inalámbrica al router y configurándolos para obtener direcciones IP automáticamente mediante DHCP. Se verificó la conectividad utilizando el comando PING entre las computadoras, el servidor y los celulares, confirmando que todos los dispositivos podían comunicarse correctamente. Finalmente, se comprobó que los celulares pudieran acceder al servidor web ingresando su dirección IP en los navegadores, asegurando que la integración de la red funcionara correctamente.
+        </p>
+      </div>
+    </div>
+
+
+    
+</div>
+          
+
+<h2 class="mt-20 mb-5" style="margin-top: 30px;">Simulación</h2>
+
+
+<div class="col-12 mb-4">
+  <div class="card p-4 text-center">
+    <h3 class="card-title mb-3">Ejercicio 1</h3>
+    
+    <figure style="text-align: center; margin: 20px auto; width: 100%;">
+      <img src="assets/images/Switch.png" alt="Descripción de la imagen" style="width: 100%;">
+      <figcaption style="font-size: 14px; color: gray; margin-top: 5px;">
+          Esquema de conexión de los dispositivos utilizados para el ejercicio 1.
+      </figcaption>
+  </figure>
+    
+  </div>
+
+  <div class="card p-4 text-center">
+    <h3 class="card-title mb-3">Ejercicio 2</h3>
+    
+    <figure style="text-align: center; margin: 20px auto; width: 100%;">
+      <img src="assets/images/Router.png" alt="Descripción de la imagen" style="width: 100%;">
+      <figcaption style="font-size: 14px; color: gray; margin-top: 5px;">
+        Esquema de conexión de los dispositivos utilizados para el ejercicio 2.
+      </figcaption>
+  </figure>
+    
+  </div>
+
+  <div class="card p-4 text-center">
+    <h3 class="card-title mb-3">Ejercicio 3</h3>
+    
+    <figure style="text-align: center; margin: 20px auto; width: 100%;">
+      <img src="assets/images/Switch-Router.png" alt="Descripción de la imagen" style="width: 100%;">
+      <figcaption style="font-size: 14px; color: gray; margin-top: 5px;">
+        Esquema de conexión de los dispositivos utilizados para el ejercicio 3.
+      </figcaption>
+  </figure>
+    
+  </div>
+</div>
+
+
+
+
+
+
+
+<h2 class="mt-5 mb-5">Diseño</h2>
+            <p>En el primer ejercicio se conectaron cuatro laptops utilizando cables directos a un switch, siendo una de ellas configurada como servidor con el servicio de XAMPP activo. Una vez establecidas las conexiones físicas, se realizaron pruebas de conectividad utilizando el comando PING entre los dispositivos para comprobar que podían comunicarse correctamente. Posteriormente, se activó el servidor XAMPP y desde cada una de las laptops clientes se intentó acceder a la página web alojada en el servidor ingresando su dirección IP en los navegadores, verificando así la correcta comunicación y funcionamiento de la red.
+
+              En el segundo ejercicio se repitió el mismo procedimiento, pero en lugar de utilizar un switch se empleó un router. Las cuatro laptops, incluida la que funcionó como servidor con XAMPP, se conectaron directamente al router mediante cables directos. El router asignó automáticamente direcciones IP a cada dispositivo a través de su servicio DHCP. Se realizaron las mismas pruebas de conectividad con el comando PING y se comprobó el acceso al servidor web desde todas las laptops, confirmando el correcto funcionamiento de la red a través del router.
+              
+              Finalmente, en el tercer ejercicio se integraron ambas redes conectando un puerto del switch a un puerto LAN del router. Además de las cuatro laptops, se añadieron tres celulares que se conectaron de manera inalámbrica al router. Se realizaron pruebas de conectividad utilizando PING entre todos los dispositivos, asegurando que tanto las laptops como los celulares podían comunicarse entre sí. También se verificó el acceso a la página web del servidor desde todos los dispositivos, confirmando así la correcta integración y operación de la red completa.</p>
+        
+            
+            
+
+   
+
+
+<h2 class="mt-20 mb-5" style="margin-top: 40px;">Construcción</h2>
+
+
+
+    <div class="row">
+      <h3 class="card-title mb-3">Ejercicio 1</h3>
+      <div class="col-md-4 mb-4">
+        <div class="card p-3 text-center">
+          <img src="assets/images/PingsE1.jpeg" class="img-fluid rounded" alt="Imagen 1">
+          <h5 class="mt-3">Pings a todos los dispositivos</h5>
+        </div>
+      </div>
+      
+      <div class="col-md-4 mb-4">
+        <div class="card p-3 text-center">
+          <img src="assets/images/FotoSWITCH.jpeg" class="img-fluid rounded" alt="Imagen 2">
+          <h5 class="mt-3">Foto armado</h5>
+        </div>
+      </div>
+    
+      <div class="col-md-4 mb-4">
+        <div class="card p-3 text-center">
+          <img src="assets/images/EVI-SWITCH.png" class="img-fluid rounded" alt="Imagen 3">
+          <h5 class="mt-3">Accesos a la página web desde todos los dispositivos</h5>
+        </div>
+      </div>
+
+      <h3 class="card-title mb-3">Ejercicio 2</h3>
+      <div class="col-md-4 mb-4">
+        <div class="card p-3 text-center">
+          <img src="assets/images/PingsROUTER.jpeg" class="img-fluid rounded" alt="Imagen 1">
+          <h5 class="mt-3">Pings a todos los dispositivos</h5>
+        </div>
+      </div>
+      
+      <div class="col-md-4 mb-4">
+        <div class="card p-3 text-center">
+          <img src="assets/images/FotoROUTER.jfif" class="img-fluid rounded" alt="Imagen 2">
+          <h5 class="mt-3">Foto armado</h5>
+        </div>
+      </div>
+    
+      <div class="col-md-4 mb-4">
+        <div class="card p-3 text-center">
+          <img src="assets/images/ROUTEREVI.png" class="img-fluid rounded" alt="Imagen 3">
+          <h5 class="mt-3">Accesos a la página web desde todos los dispositivos</h5>
+        </div>
+      </div>
+    
+
+      <h3 class="card-title mb-3">Ejercicio 3</h3>
+      <div class="col-md-4 mb-4">
+        <div class="card p-3 text-center">
+          <img src="assets/images/PingsSWRO.jpeg" class="img-fluid rounded" alt="Imagen 1">
+          <h5 class="mt-3">Pings a todos los dispositivos</h5>
+        </div>
+      </div>
+      
+      <div class="col-md-4 mb-4">
+        <div class="card p-3 text-center">
+          <img src="assets/images/FOTOSWRO.jpeg" class="img-fluid rounded" alt="Imagen 2">
+          <h5 class="mt-3">Foto armado</h5>
+        </div>
+      </div>
+    
+      <div class="col-md-4 mb-4">
+        <div class="card p-3 text-center">
+          <img src="assets/images/EVIFINAL.png" class="img-fluid rounded" alt="Imagen 3">
+          <h5 class="mt-3">Accesos a la página web desde todos los dispositivos</h5>
+        </div>
+      </div>
+      
+      
+    
+    
+    </div>
+      </div>
+    </div>
+
+
+
+    </div>
+
+
+    <h2 class="mt-5 mb-5">Resultados</h2>
+    <p> En todos los ejercicios realizados, los resultados fueron exitosos. Durante las pruebas de conectividad utilizando el comando PING, todos los dispositivos —tanto laptops como celulares— respondieron correctamente, sin pérdidas de paquetes ni tiempos de espera excedidos, lo que demostró una comunicación estable dentro de la red en cada configuración. Al activar el servidor XAMPP en la laptop designada como servidor, todas las laptops clientes lograron acceder sin inconvenientes a la página web alojada, ingresando la dirección IP correspondiente en sus navegadores. En el caso de la integración de redes, después de conectar el switch al router y añadir los celulares vía Wi-Fi, también se comprobó que estos dispositivos podían comunicarse correctamente mediante PING y acceder al servidor web sin dificultades. Los resultados confirman que las conexiones físicas, la asignación automática de direcciones IP y la configuración de los servicios de red se realizaron de manera adecuada. 
+
+    
+    <h2 class="mt-5 mb-5">Conclusiones</h2>
+    <p>La práctica realizada permitió comprobar la importancia y utilidad de las redes locales (LAN) en la comunicación eficiente entre múltiples dispositivos dentro de un mismo entorno. Se observó que elementos como el switch y el router son fundamentales para organizar y gestionar el tráfico de datos: el switch facilita la conexión directa entre varios dispositivos dentro de la misma red, mientras que el router permite, además, gestionar el direccionamiento de IPs y conectar redes diferentes, integrando tanto conexiones alámbricas como inalámbricas. Asimismo, quedó demostrado que la correcta selección y utilización de los cables de red es esencial para garantizar una comunicación estable y de alta velocidad. Gracias a estas tecnologías, es posible compartir servicios, recursos y acceder a información de manera inmediata dentro de una organización o espacio de trabajo, haciendo que las redes locales sean indispensables para el funcionamiento eficiente de sistemas informáticos modernos. Además, las pruebas realizadas evidenciaron la facilidad con la que pueden expandirse las redes para integrar más dispositivos, manteniendo la comunicación efectiva y la disponibilidad de los servicios.
+
+    </p>
+
+              <h2 class="mt-5 mb-5">Refrencias</h2>
+              <ul>
+                <li><a href="https://www.netacad.com/es/" target="_blank">Cisco Networking Academy: Network Basics. (s. f.). NetAcad.</a></li>
+<li><a href="https://blog.coverix.mx/servidor-local-ventajas-y-desventajas#:~:text=Un%20servidor%20local%20es%20un,u%20oficinas%20de%20las%20empresas." target="_blank">CoveriX. (2024, 19 junio). Ventajas y desventajas de los servidores locales. Coverix.</a></li>
+<li><a href="https://www.apachefriends.org/es/faq_windows.html" target="_blank">XAMPP FAQs for Windows. (s. f.). Apache Friends.</a></li>
+<li><a href="https://www.cisco.com/c/es_mx/solutions/small-business/resource-center/networking/network-switch-vs-router.html" target="_blank">Small business IT explained in 60 seconds or less: Switches vs. Routers. (2023, 3 mayo). [Vídeo]. Cisco.</a></li>
+<li><a href="https://www.cisco.com/c/en/us/products/switches/what-is-a-lan-local-area-network.html" target="_blank">What Is a LAN? (2025, 14 abril). Cisco.</a></li>
+<li><a href="https://www.netacad.com/es/" target="_blank">Cisco Networking Academy: Network Basics. (s. f.). NetAcad.</a></li>
+
+
+            </ul>
+            
+            
+              <div></div>
+              <div></div>
+                     
+              
+              
+  </div>
+</div>
+
+
+<!-- Script para copiar el código -->
+<script>
+function copyCode(id) {
+  var code = document.getElementById(id).innerText;
+  navigator.clipboard.writeText(code).then(() => {
+    alert("Código copiado al portapapeles!");
+  });
+}
+</script>
+
+
+
+
+</section>
+
+<footer>
+  <div class="container">
+    <div class="col-lg-30">
+      <p>Copyright © 2036 Scholar Organization. All rights reserved. &nbsp;&nbsp;&nbsp; Design: <a href="https://templatemo.com" rel="nofollow" target="_blank">TemplateMo</a></p>
+    </div>
+  </div>
+</footer>
+
+<!-- Scripts -->
+<!-- Bootstrap core JavaScript -->
+<script src="vendor/jquery/jquery.min.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<script src="assets/js/isotope.min.js"></script>
+<script src="assets/js/owl-carousel.js"></script>
+<script src="assets/js/counter.js"></script>
+<script src="assets/js/custom.js"></script>
+
+
+
+
+
+</body>
+
+</script>
+
+</html>
